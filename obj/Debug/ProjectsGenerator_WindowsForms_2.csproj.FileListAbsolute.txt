@@ -10,10 +10,10 @@ C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\EntityFra
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\System.Data.SQLite.xml
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csprojAssemblyReference.cache
-C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.Form1.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.Properties.Resources.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csproj.GenerateResource.cache
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csproj.CoreCompileInputs.cache
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csproj.CopyComplete
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.exe
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.pdb
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.MainWindow.resources
