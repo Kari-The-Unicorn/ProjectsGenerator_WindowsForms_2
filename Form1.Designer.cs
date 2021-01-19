@@ -1,5 +1,5 @@
 ﻿
-namespace Constructor_WinForms_SqlLite
+namespace ProjectsGenerator_WindowsForms_2
 {
     partial class Form1
     {
@@ -30,37 +30,34 @@ namespace Constructor_WinForms_SqlLite
         private void InitializeComponent()
         {
             this.dgvProjects = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bDisplayProjects = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjects)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProjects
             // 
             this.dgvProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjects.Location = new System.Drawing.Point(12, 35);
+            this.dgvProjects.Location = new System.Drawing.Point(12, 23);
             this.dgvProjects.Name = "dgvProjects";
-            this.dgvProjects.Size = new System.Drawing.Size(776, 312);
+            this.dgvProjects.Size = new System.Drawing.Size(776, 339);
             this.dgvProjects.TabIndex = 0;
             // 
-            // button1
+            // bDisplayProjects
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(64, 368);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Display Projects";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bDisplayProjects.Location = new System.Drawing.Point(204, 391);
+            this.bDisplayProjects.Name = "bDisplayProjects";
+            this.bDisplayProjects.Size = new System.Drawing.Size(101, 31);
+            this.bDisplayProjects.TabIndex = 1;
+            this.bDisplayProjects.Text = "Display Projects";
+            this.bDisplayProjects.UseVisualStyleBackColor = true;
+            this.bDisplayProjects.Click += new System.EventHandler(this.bDisplayProjects_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bDisplayProjects);
             this.Controls.Add(this.dgvProjects);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -72,7 +69,7 @@ namespace Constructor_WinForms_SqlLite
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProjects;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bDisplayProjects;
     }
 }
 

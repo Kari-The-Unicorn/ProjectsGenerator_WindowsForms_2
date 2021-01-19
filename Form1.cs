@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
 
-namespace Constructor_WinForms_SqlLite
+namespace ProjectsGenerator_WindowsForms_2
 {
     public partial class Form1 : Form
     {
@@ -12,7 +12,7 @@ namespace Constructor_WinForms_SqlLite
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bDisplayProjects_Click(object sender, EventArgs e)
         {
             SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3");
 

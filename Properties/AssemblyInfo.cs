@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Constructor_WinForms_SqlLite")]
+[assembly: AssemblyTitle("ProjectsGenerator_WindowsForms_2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Constructor_WinForms_SqlLite")]
+[assembly: AssemblyProduct("ProjectsGenerator_WindowsForms_2")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3f2e04f0-85b9-4f88-a536-2eaffab838d3")]
+[assembly: Guid("e4c2c48b-c1c3-48e3-ac67-f4e6cfbbaeb5")]
 
 // Version information for an assembly consists of the following four values:
 //

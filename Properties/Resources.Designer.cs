@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Constructor_WinForms_SqlLite.Properties
+namespace ProjectsGenerator_WindowsForms_2.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -43,7 +43,7 @@ namespace Constructor_WinForms_SqlLite.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Constructor_WinForms_SqlLite.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProjectsGenerator_WindowsForms_2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Constructor_WinForms_SqlLite
+namespace ProjectsGenerator_WindowsForms_2
 {
     static class Program
     {

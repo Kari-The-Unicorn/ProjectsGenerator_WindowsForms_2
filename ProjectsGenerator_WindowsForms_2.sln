@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor_WinForms_SqlLite", "Constructor_WinForms_SqlLite.csproj", "{3F2E04F0-85B9-4F88-A536-2EAFFAB838D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectsGenerator_WindowsForms_2", "ProjectsGenerator_WindowsForms_2.csproj", "{E4C2C48B-C1C3-48E3-AC67-F4E6CFBBAEB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F2E04F0-85B9-4F88-A536-2EAFFAB838D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F2E04F0-85B9-4F88-A536-2EAFFAB838D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F2E04F0-85B9-4F88-A536-2EAFFAB838D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F2E04F0-85B9-4F88-A536-2EAFFAB838D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C2C48B-C1C3-48E3-AC67-F4E6CFBBAEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C2C48B-C1C3-48E3-AC67-F4E6CFBBAEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C2C48B-C1C3-48E3-AC67-F4E6CFBBAEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C2C48B-C1C3-48E3-AC67-F4E6CFBBAEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6E44F4EE-324A-4566-8F0F-D86BE50DB31E}
+		SolutionGuid = {9A58C3A5-4500-4365-B843-B95224791766}
 	EndGlobalSection
 EndGlobal
