@@ -31,11 +31,11 @@ namespace ProjectsGenerator_WindowsForms_2
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pSideMenu = new System.Windows.Forms.Panel();
-            this.pLogo = new System.Windows.Forms.Panel();
-            this.bNewProject = new System.Windows.Forms.Button();
-            this.bOpenProject = new System.Windows.Forms.Button();
-            this.bEditProject = new System.Windows.Forms.Button();
             this.bDeleteProject = new System.Windows.Forms.Button();
+            this.bEditProject = new System.Windows.Forms.Button();
+            this.bOpenProject = new System.Windows.Forms.Button();
+            this.bNewProject = new System.Windows.Forms.Button();
+            this.pLogo = new System.Windows.Forms.Panel();
             this.dgvProjects = new System.Windows.Forms.DataGridView();
             this.lInfoProjects = new System.Windows.Forms.Label();
             this.pSideMenu.SuspendLayout();
@@ -55,30 +55,34 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pSideMenu.Size = new System.Drawing.Size(125, 537);
             this.pSideMenu.TabIndex = 2;
             // 
-            // pLogo
+            // bDeleteProject
             // 
-            this.pLogo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pLogo.Location = new System.Drawing.Point(0, 0);
-            this.pLogo.Name = "pLogo";
-            this.pLogo.Size = new System.Drawing.Size(125, 100);
-            this.pLogo.TabIndex = 0;
+            this.bDeleteProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bDeleteProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bDeleteProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bDeleteProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bDeleteProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bDeleteProject.Location = new System.Drawing.Point(0, 235);
+            this.bDeleteProject.Name = "bDeleteProject";
+            this.bDeleteProject.Size = new System.Drawing.Size(125, 45);
+            this.bDeleteProject.TabIndex = 6;
+            this.bDeleteProject.Text = "Usuń";
+            this.bDeleteProject.UseVisualStyleBackColor = false;
             // 
-            // bNewProject
+            // bEditProject
             // 
-            this.bNewProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bNewProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bNewProject.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bNewProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bNewProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bNewProject.Location = new System.Drawing.Point(0, 100);
-            this.bNewProject.Name = "bNewProject";
-            this.bNewProject.Size = new System.Drawing.Size(125, 45);
-            this.bNewProject.TabIndex = 3;
-            this.bNewProject.Text = "Nowy projekt";
-            this.bNewProject.UseVisualStyleBackColor = false;
+            this.bEditProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bEditProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bEditProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bEditProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bEditProject.Location = new System.Drawing.Point(0, 190);
+            this.bEditProject.Name = "bEditProject";
+            this.bEditProject.Size = new System.Drawing.Size(125, 45);
+            this.bEditProject.TabIndex = 5;
+            this.bEditProject.Text = "Edytuj";
+            this.bEditProject.UseVisualStyleBackColor = false;
+            this.bEditProject.Click += new System.EventHandler(this.bEditProject_Click);
             // 
             // bOpenProject
             // 
@@ -94,33 +98,31 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bOpenProject.Text = "Otwórz";
             this.bOpenProject.UseVisualStyleBackColor = false;
             // 
-            // bEditProject
+            // bNewProject
             // 
-            this.bEditProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bEditProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bEditProject.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bEditProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bEditProject.Location = new System.Drawing.Point(0, 190);
-            this.bEditProject.Name = "bEditProject";
-            this.bEditProject.Size = new System.Drawing.Size(125, 45);
-            this.bEditProject.TabIndex = 5;
-            this.bEditProject.Text = "Edytuj";
-            this.bEditProject.UseVisualStyleBackColor = false;
+            this.bNewProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bNewProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bNewProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bNewProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bNewProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bNewProject.Location = new System.Drawing.Point(0, 100);
+            this.bNewProject.Name = "bNewProject";
+            this.bNewProject.Size = new System.Drawing.Size(125, 45);
+            this.bNewProject.TabIndex = 3;
+            this.bNewProject.Text = "Nowy projekt";
+            this.bNewProject.UseVisualStyleBackColor = false;
+            this.bNewProject.Click += new System.EventHandler(this.bNewProject_Click);
             // 
-            // bDeleteProject
+            // pLogo
             // 
-            this.bDeleteProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bDeleteProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bDeleteProject.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bDeleteProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bDeleteProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bDeleteProject.Location = new System.Drawing.Point(0, 235);
-            this.bDeleteProject.Name = "bDeleteProject";
-            this.bDeleteProject.Size = new System.Drawing.Size(125, 45);
-            this.bDeleteProject.TabIndex = 6;
-            this.bDeleteProject.Text = "Usuń";
-            this.bDeleteProject.UseVisualStyleBackColor = false;
+            this.pLogo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pLogo.Location = new System.Drawing.Point(0, 0);
+            this.pLogo.Name = "pLogo";
+            this.pLogo.Size = new System.Drawing.Size(125, 100);
+            this.pLogo.TabIndex = 0;
             // 
             // dgvProjects
             // 
@@ -180,7 +182,7 @@ namespace ProjectsGenerator_WindowsForms_2
         private System.Windows.Forms.Button bOpenProject;
         private System.Windows.Forms.Button bNewProject;
         private System.Windows.Forms.Panel pLogo;
-        private System.Windows.Forms.DataGridView dgvProjects;
         private System.Windows.Forms.Label lInfoProjects;
+        public System.Windows.Forms.DataGridView dgvProjects;
     }
 }
