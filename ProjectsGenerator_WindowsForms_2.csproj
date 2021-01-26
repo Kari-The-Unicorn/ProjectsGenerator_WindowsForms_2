@@ -71,8 +71,8 @@
     <Compile Include="AddProject.Designer.cs">
       <DependentUpon>AddProject.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataEntities\Picture.cs" />
-    <Compile Include="DataEntities\Project.cs" />
+    <Compile Include="Objects\Picture.cs" />
+    <Compile Include="Objects\Project.cs" />
     <Compile Include="EditProject.cs">
       <SubType>Form</SubType>
     </Compile>

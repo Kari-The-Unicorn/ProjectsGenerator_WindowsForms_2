@@ -17,5 +17,4 @@ C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsG
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.pdb
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.MainWindow.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.AddProject.resources
-C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csprojAssemblyReference.cache
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.EditProject.resources

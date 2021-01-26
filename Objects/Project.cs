@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ProjectsGenerator_WindowsForms_2.DataEntities
+namespace ProjectsGenerator_WindowsForms_2.Objects
 {
     public class Project
     {
-        public Project()
-        {
-            //this.Issues = new HashSet<Issue>();
-        }
         public int id { get; set; }
         public string ProjectName { get; set; }
         public string ProjectAddress { get; set; }

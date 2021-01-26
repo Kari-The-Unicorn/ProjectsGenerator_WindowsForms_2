@@ -65,50 +65,44 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void bEditProject_Click(object sender, EventArgs e)
         {
-            //MDIChildEditProject(sender, e);
+            MDIChildEditProject(sender, e);
         }
 
         protected void MDIChildEditProject(object sender, System.EventArgs e)
         {
-            //EditProject newMdiChildEdit = new EditProject();
+            EditProject newMdiChildEdit = new EditProject();
 
-            //try
-            //{
-            //    project = projects.GetSelectedProject();
-
-            //    if (project != null)
-            //    {
-            //        ((EditProject)newMdiChildEdit).lblId.Text = project.id.ToString().Trim();
-            //        ((EditProject)newMdiChildEdit).tbProjectName.Text = project.ProjectName.Trim();
-            //        ((EditProject)newMdiChildEdit).tbProjectAddress.Text = project.ProjectAddress.ToString().Trim();
-            //        ((EditProject)newMdiChildEdit).tbProjectCompany.Text = project.ProjectCompany.ToString().Trim();
-            //        ((EditProject)newMdiChildEdit).tbProjectState.Text = project.ProjectState.ToString().Trim();
-            //        ((EditProject)newMdiChildEdit).dtpProjectCollectionDate.Value = project.ProjectDateIn.Value;
-            //        ((EditProject)newMdiChildEdit).dtpProjectCompleteDate.Value = project.ProjectDateOut.Value;
-            //        newMdiChildEdit.ShowDialog();
-            //        openChildForm(projects);
-            //    }
-            //}
-            //catch
-            //{
-            //    Close();
-            //}
+            try
+            {
+                var id = 0;
+                if (dgvProjects.SelectedRows.Count != 0)
+                {
+                    DataGridViewRow row = this.dgvProjects.SelectedRows[0];
+                    id = int.Parse(row.Cells["id"].Value.ToString());
+                }
+                string connectionPath = "Data Source=|DataDirectory|/db/db.db; version=3";
+                SQLiteConnection connection = new SQLiteConnection(connectionPath);
+                connection.Open();
+                SQLiteCommand sqlite_cmd = connection.CreateCommand();
+                sqlite_cmd.CommandText = $"Select * FROM Projects WHERE id = {id}";
+                SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader();
+                while (sqlite_datareader.Read())
+                {
+                    newMdiChildEdit.tbProjectName.Text = sqlite_datareader.GetString(1);
+                    newMdiChildEdit.tbProjectAddress.Text = sqlite_datareader.GetString(2);
+                    newMdiChildEdit.tbProjectCompany.Text = sqlite_datareader.GetString(3);
+                    newMdiChildEdit.tbProjectState.Text = sqlite_datareader.GetString(4);
+                    newMdiChildEdit.dtpProjectCollectionDate.Text = sqlite_datareader.GetString(5);
+                    newMdiChildEdit.dtpProjectCompleteDate.Text = sqlite_datareader.GetString(6);
+                    newMdiChildEdit.ShowDialog();
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Close();
+            }
         }
-
-
-
-        //public void openChildForm(Form childForm)
-        //{
-        //    if (activeForm != null)
-        //        activeForm.Close();
-        //    activeForm = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    panelChildForm.Controls.Add(childForm);
-        //    panelChildForm.Tag = childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //}
     }
 }

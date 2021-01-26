@@ -1,4 +1,4 @@
-﻿using ProjectsGenerator_WindowsForms_2.DataEntities;
+﻿using ProjectsGenerator_WindowsForms_2.Objects;
 using System;
 using System.Data.SQLite;
 using System.Drawing;
