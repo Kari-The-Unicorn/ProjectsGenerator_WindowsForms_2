@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
-using ProjectsGenerator_WindowsForms_2.Objects;
 
 namespace ProjectsGenerator_WindowsForms_2
 {
