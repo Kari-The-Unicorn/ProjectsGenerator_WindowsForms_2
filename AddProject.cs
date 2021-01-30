@@ -60,21 +60,68 @@ namespace ProjectsGenerator_WindowsForms_2
                     project.ProjectDateOut = projectDateOut;
                     Image imageContent = new Bitmap(fileName);
                     picture.PictureName = fileName.Trim();
-                    project.ImageId = picture.PictureId;
+                    //project.ImageId = picture.PictureId;
                     picture.PictureContent = ConvertImageToByteArray(imageContent);
                     byte[] pictureContent = picture.PictureContent;
 
                     try
                     {
-                        SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3");
-                        dbConnection.Open();
                         string query = $@"insert into Projects(ProjectName, ProjectAddress, ProjectCompany, ProjectState, ProjectDateIn, ProjectDateOut, ImageId)" +
                                        "values('" + project.ProjectName + "','" + project.ProjectAddress + "', '" + project.ProjectCompany + "', '" + project.ProjectState + "', '" + project.ProjectDateIn + "', '" + project.ProjectDateOut + "', '" + project.ImageId + "'); insert into Pictures(PictureName, PictureContent)" +
                                        "values('" + picture.PictureName + "', '" + pictureContent + "')";
 
-                        SQLiteCommand dbCommand = new SQLiteCommand(query, dbConnection);
-                        dbCommand.ExecuteNonQuery();
-                        dbConnection.Close();
+                        using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+                        using (SQLiteCommand dbCommand = new SQLiteCommand(query, dbConnection))
+                        {
+                            dbConnection.Open();
+                            dbCommand.ExecuteNonQuery();
+                        }
+
+                        string query2 = $@"SELECT * FROM Pictures ORDER BY PictureId DESC LIMIT 1";
+
+                        using (SQLiteConnection dbConnection2 =
+                            new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+                        {
+                            using (SQLiteCommand dbCommand2 = new SQLiteCommand(query2, dbConnection2))
+                            {
+                                dbConnection2.Open();
+                                dbCommand2.ExecuteNonQuery();
+                                using (SQLiteCommand sqlite_cmd = dbConnection2.CreateCommand())
+                                {
+                                    sqlite_cmd.CommandText = query2;
+                                    SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader();
+
+                                    if (sqlite_datareader.Read())
+                                    {
+                                        picture.PictureId = sqlite_datareader.GetInt32(0);
+                                        project.ImageId = picture.PictureId;
+                                    }
+                                }
+                            }
+                            string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE id = {project.id}";
+
+                            using (SQLiteCommand dbCommand3 = new SQLiteCommand(query3, dbConnection2))
+                            {
+                                //dbConnection2.Open();
+                                //string query3 = $@"insert into Projects(ImageId) values('" + picture.PictureId + "') WHERE id = ;";
+
+                                dbCommand3.ExecuteNonQuery();
+                            }
+                        }
+
+                        //using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+
+
+
+                        //var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+                        //SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3");
+
+                        //using (var dbConnection = new SQLiteConnection(connectionString))
+                        //{
+
+
+                        //}
+
                         MessageBox.Show("Projekt dodano pomyślnie.");
                         MainWindow mainWindow = (MainWindow)Application.OpenForms["MainWindow"];
                         if (mainWindow != null)
@@ -98,9 +145,9 @@ namespace ProjectsGenerator_WindowsForms_2
                         }
                     }
 
-                    catch (Exception ec)
+                    catch (Exception exc)
                     {
-                        Console.WriteLine(ec.Message);
+                        Console.WriteLine(exc.Message);
                         MessageBox.Show("Projektu nie dodano.");
                     }
                 }

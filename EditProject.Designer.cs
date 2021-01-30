@@ -265,6 +265,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Controls.Add(this.bEditProject);
             this.Name = "EditProject";
             this.Text = "Edytuj projekt";
+            this.Load += new System.EventHandler(this.EditProject_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

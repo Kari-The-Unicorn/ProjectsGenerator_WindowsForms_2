@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
 
@@ -27,52 +26,18 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void bEditProject_Click(object sender, EventArgs e)
         {
-            //projectsKonstruktorEntities.SaveChanges();
-            //((Projects)Owner).dgvProjects.Refresh();
-            //Projects_Load(sender, e);
-            MainWindow mainWindow = new MainWindow();
-            //Projects projects = new Projects();
             try
             {
-                var idBase = int.Parse(lblId.Text);
-                SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3");
-                dbConnection.Open();
-                string query = $@"Select * FROM Projects WHERE id = {idBase}";
+                var id = int.Parse(lblId.Text);
 
-                SQLiteCommand dbCommand = new SQLiteCommand(query, dbConnection);
-                DataTable dataTable = new DataTable();
-                SQLiteDataAdapter dbAdapter = new SQLiteDataAdapter(dbCommand);
-                dbAdapter.Fill(dataTable);
-                //tbProjectName = dataTable.;
+                string dbQuery = $@"UPDATE Projects SET ProjectName = '{tbProjectName.Text}', ProjectAddress = '{tbProjectAddress.Text}', ProjectCompany = '{tbProjectCompany.Text}', ProjectState = '{tbProjectState.Text}', ProjectDateIn = '{dtpProjectCollectionDate.Value}', ProjectDateOut = '{dtpProjectCompleteDate.Value}' WHERE id = {id}";
 
-                dbCommand.ExecuteNonQuery();
-                dbConnection.Close();
-
-                //Project project = 
-
-                //Project project = projectsKonstruktorEntities.Projects
-                // .FirstOrDefault(q => q.id == idBase);
-                //if (System.Windows.Forms.Application.OpenForms["EditProject"] != null)
-                //{
-                //    project = (System.Windows.Forms.Application.OpenForms["EditProject"] as Projects)
-                //        .GetSelectedProject();
-                //}
-
-                //if (Application.OpenForms["EditProject"] != null)
-                //{
-                //    project = (Application.OpenForms["EditProject"] as Projects)
-                //        .GetSelectedProject();
-                //}
-
-                //if (project != null)
-                //{
-                //    project.ProjectName = tbProjectName.Text;
-                //    project.ProjectAddress = tbProjectAddress.Text;
-                //    project.ProjectCompany = tbProjectCompany.Text;
-                //    project.ProjectState = tbProjectState.Text;
-                //    project.ProjectDateIn = dtpProjectCollectionDate.Value;
-                //    project.ProjectDateOut = dtpProjectCompleteDate.Value;
-                //}
+                using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+                using (SQLiteCommand dbCommand = new SQLiteCommand(dbQuery, dbConnection))
+                {
+                    dbConnection.Open();
+                    dbCommand.ExecuteNonQuery();
+                }
 
                 for (int index = Application.OpenForms.Count - 1; index >= 0; index--)
                 {
@@ -81,11 +46,24 @@ namespace ProjectsGenerator_WindowsForms_2
                         Application.OpenForms[index].Hide();
                     }
                 }
+
+                MainWindow mainWindow = (MainWindow)Application.OpenForms["MainWindow"];
+                if (mainWindow != null)
+                {
+                    mainWindow.MainWindow_Load(sender, e);
+                    mainWindow.dgvProjects.Update();
+                    mainWindow.dgvProjects.Refresh();
+                }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 Close();
             }
+        }
+
+        private void EditProject_Load(object sender, EventArgs e)
+        {
         }
     }
 }

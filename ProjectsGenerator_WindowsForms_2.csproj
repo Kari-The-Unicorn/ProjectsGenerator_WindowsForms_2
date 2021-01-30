@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIssue.Designer.cs">
+      <DependentUpon>AddIssue.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenMap.Designer.cs">
+      <DependentUpon>OpenMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="OpenProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddIssue.resx">
+      <DependentUpon>AddIssue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenMap.resx">
+      <DependentUpon>OpenMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OpenProject.resx">
       <DependentUpon>OpenProject.cs</DependentUpon>

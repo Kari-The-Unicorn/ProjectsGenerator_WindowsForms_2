@@ -29,7 +29,7 @@ namespace ProjectsGenerator_WindowsForms_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pProjectInfo = new System.Windows.Forms.Panel();
             this.tbProjectInfoDateOut = new System.Windows.Forms.TextBox();
             this.tbProjectInfoDateIn = new System.Windows.Forms.TextBox();
@@ -114,6 +114,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tbProjectInfoGeneral.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbProjectInfoGeneral.Size = new System.Drawing.Size(644, 32);
             this.tbProjectInfoGeneral.TabIndex = 2;
+            this.tbProjectInfoGeneral.TextChanged += new System.EventHandler(this.tbProjectInfoGeneral_TextChanged);
             // 
             // lProjectInfo
             // 
@@ -147,6 +148,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bShowMap.TabIndex = 10;
             this.bShowMap.Text = "Pokaż mapę";
             this.bShowMap.UseVisualStyleBackColor = false;
+            this.bShowMap.Click += new System.EventHandler(this.bShowMap_Click);
             // 
             // bLoadIssues
             // 
@@ -184,15 +186,16 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvIssues.Margin = new System.Windows.Forms.Padding(2);
             this.dgvIssues.Name = "dgvIssues";
             this.dgvIssues.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvIssues.RowTemplate.Height = 24;
             this.dgvIssues.RowTemplate.ReadOnly = true;
             this.dgvIssues.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvIssues.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvIssues.Size = new System.Drawing.Size(1090, 482);
             this.dgvIssues.TabIndex = 7;
+            this.dgvIssues.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIssues_CellContentClick);
             // 
             // OpenProject
             // 
