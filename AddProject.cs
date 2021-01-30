@@ -98,7 +98,7 @@ namespace ProjectsGenerator_WindowsForms_2
                                     }
                                 }
                             }
-                            string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE id = {project.id}";
+                            string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE ProjectName = '" +  project.ProjectName + "'";
 
                             using (SQLiteCommand dbCommand3 = new SQLiteCommand(query3, dbConnection2))
                             {

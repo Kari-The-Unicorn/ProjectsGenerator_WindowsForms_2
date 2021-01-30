@@ -77,6 +77,12 @@
     <Compile Include="AddProject.Designer.cs">
       <DependentUpon>AddProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditIssue.Designer.cs">
+      <DependentUpon>EditIssue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objects\Issue.cs" />
     <Compile Include="Objects\Picture.cs" />
     <Compile Include="Objects\Project.cs" />
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditIssue.resx">
+      <DependentUpon>EditIssue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProject.resx">
       <DependentUpon>EditProject.cs</DependentUpon>

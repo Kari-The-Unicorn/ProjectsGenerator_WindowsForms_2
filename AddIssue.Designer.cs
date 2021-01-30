@@ -62,6 +62,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddIssue.TabIndex = 5;
             this.bAddIssue.Text = "Dodaj poprawkę";
             this.bAddIssue.UseVisualStyleBackColor = false;
+            this.bAddIssue.Click += new System.EventHandler(this.bAddIssue_Click);
             // 
             // bCancelAddingIssue
             // 
@@ -76,6 +77,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingIssue.TabIndex = 6;
             this.bCancelAddingIssue.Text = "Anuluj";
             this.bCancelAddingIssue.UseVisualStyleBackColor = false;
+            this.bCancelAddingIssue.Click += new System.EventHandler(this.bCancelAddingIssue_Click);
             // 
             // tlpAddIssueForm
             // 
@@ -179,6 +181,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pProjectInfoInIssueForm.Name = "pProjectInfoInIssueForm";
             this.pProjectInfoInIssueForm.Size = new System.Drawing.Size(953, 73);
             this.pProjectInfoInIssueForm.TabIndex = 8;
+            this.pProjectInfoInIssueForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pProjectInfoInIssueForm_Paint);
             // 
             // tbProjectInfoDateOutInIssueForm
             // 

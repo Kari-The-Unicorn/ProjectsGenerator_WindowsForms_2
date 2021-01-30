@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SQLite;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjectsGenerator_WindowsForms_2
@@ -73,6 +74,11 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void tbProjectInfoGeneral_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void pProjectInfo_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, pProjectInfo.DisplayRectangle, Color.LightSkyBlue, ButtonBorderStyle.Solid);
         }
     }
 }
