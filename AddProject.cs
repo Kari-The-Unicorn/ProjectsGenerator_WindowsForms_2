@@ -79,8 +79,7 @@ namespace ProjectsGenerator_WindowsForms_2
 
                         string query2 = $@"SELECT * FROM Pictures ORDER BY PictureId DESC LIMIT 1";
 
-                        using (SQLiteConnection dbConnection2 =
-                            new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+                        using (SQLiteConnection dbConnection2 = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
                         {
                             using (SQLiteCommand dbCommand2 = new SQLiteCommand(query2, dbConnection2))
                             {
@@ -96,31 +95,16 @@ namespace ProjectsGenerator_WindowsForms_2
                                         picture.PictureId = sqlite_datareader.GetInt32(0);
                                         project.ImageId = picture.PictureId;
                                     }
+                                    sqlite_datareader.Close();
                                 }
                             }
                             string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE ProjectName = '" +  project.ProjectName + "'";
 
                             using (SQLiteCommand dbCommand3 = new SQLiteCommand(query3, dbConnection2))
                             {
-                                //dbConnection2.Open();
-                                //string query3 = $@"insert into Projects(ImageId) values('" + picture.PictureId + "') WHERE id = ;";
-
                                 dbCommand3.ExecuteNonQuery();
                             }
                         }
-
-                        //using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
-
-
-
-                        //var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
-                        //SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3");
-
-                        //using (var dbConnection = new SQLiteConnection(connectionString))
-                        //{
-
-
-                        //}
 
                         MessageBox.Show("Projekt dodano pomyślnie.");
                         MainWindow mainWindow = (MainWindow)Application.OpenForms["MainWindow"];
@@ -144,7 +128,6 @@ namespace ProjectsGenerator_WindowsForms_2
                             }
                         }
                     }
-
                     catch (Exception exc)
                     {
                         Console.WriteLine(exc.Message);

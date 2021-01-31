@@ -173,6 +173,20 @@ namespace ProjectsGenerator_WindowsForms_2
                     id = int.Parse(row.Cells["id"].Value.ToString());
                 }
                 var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+                
+                using (SQLiteConnection connection2 = new SQLiteConnection(connectionString))
+                using (SQLiteCommand sqlite_cmd2 = connection2.CreateCommand())
+                {
+                    connection2.Open();
+                    sqlite_cmd2.CommandText = $"Select * FROM Projects WHERE id = {id}";
+                    SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
+
+                    if (sqlite_datareader2.Read())
+                    {
+                        project.ImageId = sqlite_datareader2.GetInt32(7);
+                    }
+                    sqlite_datareader2.Close();
+                }
 
                 using (SQLiteConnection connection = new SQLiteConnection(connectionString))
                 using (SQLiteCommand sqlite_cmd = connection.CreateCommand())
@@ -181,12 +195,22 @@ namespace ProjectsGenerator_WindowsForms_2
 
                     sqlite_cmd.CommandText = $"DELETE FROM Projects WHERE id = {id}";
                     sqlite_cmd.ExecuteNonQuery();
+                    //sqlite_cmd.CommandText = $"DELETE FROM Pictures WHERE PictureId = {project.ImageId}";
+                    //sqlite_cmd.ExecuteNonQuery();
                     string dbQuery = "SELECT * FROM Projects";
                     SQLiteCommand dbCommand = new SQLiteCommand(dbQuery, connection);
                     DataTable dataTable = new DataTable();
                     SQLiteDataAdapter dbAdapter = new SQLiteDataAdapter(dbCommand);
                     dbAdapter.Fill(dataTable);
                     dgvProjects.DataSource = dataTable;
+                    
+                }
+                using (SQLiteConnection connection1 = new SQLiteConnection(connectionString))
+                using (SQLiteCommand sqlite_cmd1 = connection1.CreateCommand())
+                {
+                    connection1.Open();
+                    sqlite_cmd1.CommandText = $"DELETE FROM Pictures WHERE PictureId = {project.ImageId}";
+                    sqlite_cmd1.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)

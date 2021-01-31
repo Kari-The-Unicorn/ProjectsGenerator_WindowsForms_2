@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ProjectsGenerator_WindowsForms_2
@@ -49,25 +50,61 @@ namespace ProjectsGenerator_WindowsForms_2
             OpenMap newMdiChildMap = new OpenMap();
             try
             {
-                var project1 = MainWindow.project;
+                var project = MainWindow.project;
 
-                var pictureId1 = project1.ImageId;
-
-                if (project1 != null && pictureId1 != null)
+                var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+                using (SQLiteConnection connection2 = new SQLiteConnection(connectionString))
+                using (SQLiteCommand sqlite_cmd2 = connection2.CreateCommand())
                 {
-                    //((OpenMap)newMdiChildMap).pbMap.Image = System.Drawing.Image.FromFile(projectsKonstruktorEntities.Pictures1
+                    connection2.Open();
+                    sqlite_cmd2.CommandText = $"Select * FROM Projects WHERE id = {project.id}";
+                    SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
+
+                    if (sqlite_datareader2.Read())
+                    {
+                        project.ImageId = sqlite_datareader2.GetInt32(7);
+                    }
+                    sqlite_datareader2.Close();
+                }
+
+                var pictureId = project.ImageId;
+                var pictureSrc = string.Empty;
+                byte[] pictureContent = new byte[0];
+
+                if (project != null && pictureId != null)
+                {
+                    using (SQLiteConnection connection3 = new SQLiteConnection(connectionString))
+                    using (SQLiteCommand sqlite_cmd3 = connection3.CreateCommand())
+                    {
+                        connection3.Open();
+                        sqlite_cmd3.CommandText = $"Select * FROM Pictures WHERE PictureId = {pictureId}";
+                        SQLiteDataReader sqlite_datareader3 = sqlite_cmd3.ExecuteReader();
+
+                        if (sqlite_datareader3.Read())
+                        {
+                            pictureSrc = sqlite_datareader3.GetString(1);
+                            pictureContent = sqlite_datareader3.GetFieldValue<byte[]>(2);
+                        }
+                        sqlite_datareader3.Close();
+                    }
+
+
+                    ((OpenMap) newMdiChildMap).pbMap.Image = System.Drawing.Image.FromFile(pictureSrc);
+                    //projectsKonstruktorEntities.Pictures1
                     //    .FirstOrDefault(q => q.PictureId == pictureId1).PictureName.ToString());
-                    //Byte[] byteBLOBData = (Byte[])projectsKonstruktorEntities.Pictures1
+                    Byte[] byteBLOBData = (Byte[]) pictureContent;
+                    //projectsKonstruktorEntities.Pictures1
                     //    .FirstOrDefault(q => q.PictureId == pictureId1).PictureContent;
-                    //MemoryStream ms = new MemoryStream(byteBLOBData);
-                    //ms.Write(byteBLOBData, 0, byteBLOBData.Length);
-                    //ms.Position = 0;
-                    //((OpenMap)newMdiChildMap).pbMap.Image = Image.FromStream(ms);
-                    //newMdiChildMap.ShowDialog();
+                    MemoryStream ms = new MemoryStream(byteBLOBData);
+                    ms.Write(byteBLOBData, 0, byteBLOBData.Length);
+                    ms.Position = 0;
+                    ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromStream(ms);
+                    newMdiChildMap.ShowDialog();
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 Close();
             }
         }
