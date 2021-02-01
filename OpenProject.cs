@@ -83,22 +83,12 @@ namespace ProjectsGenerator_WindowsForms_2
                         if (sqlite_datareader3.Read())
                         {
                             pictureSrc = sqlite_datareader3.GetString(1);
-                            pictureContent = sqlite_datareader3.GetFieldValue<byte[]>(2);
+                            //pictureContent = sqlite_datareader3.GetFieldValue<byte[]>(2);
                         }
                         sqlite_datareader3.Close();
                     }
 
-
-                    ((OpenMap) newMdiChildMap).pbMap.Image = System.Drawing.Image.FromFile(pictureSrc);
-                    //projectsKonstruktorEntities.Pictures1
-                    //    .FirstOrDefault(q => q.PictureId == pictureId1).PictureName.ToString());
-                    Byte[] byteBLOBData = (Byte[]) pictureContent;
-                    //projectsKonstruktorEntities.Pictures1
-                    //    .FirstOrDefault(q => q.PictureId == pictureId1).PictureContent;
-                    MemoryStream ms = new MemoryStream(byteBLOBData);
-                    ms.Write(byteBLOBData, 0, byteBLOBData.Length);
-                    ms.Position = 0;
-                    ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromStream(ms);
+                    ((OpenMap) newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
                     newMdiChildMap.ShowDialog();
                 }
             }
