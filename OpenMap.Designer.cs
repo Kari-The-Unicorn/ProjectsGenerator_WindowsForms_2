@@ -37,19 +37,21 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.pbMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbMap.Location = new System.Drawing.Point(0, 0);
+            this.pbMap.Margin = new System.Windows.Forms.Padding(2);
             this.pbMap.Name = "pbMap";
-            this.pbMap.Size = new System.Drawing.Size(902, 683);
+            this.pbMap.Size = new System.Drawing.Size(676, 555);
             this.pbMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMap.TabIndex = 0;
             this.pbMap.TabStop = false;
+            this.pbMap.Click += new System.EventHandler(this.pbMap_Click);
+            this.pbMap.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbMap_MouseDown);
             // 
             // OpenMap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 683);
+            this.ClientSize = new System.Drawing.Size(676, 555);
             this.Controls.Add(this.pbMap);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OpenMap";
             this.Text = "Mapa projektu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

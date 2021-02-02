@@ -195,8 +195,6 @@ namespace ProjectsGenerator_WindowsForms_2
 
                     sqlite_cmd.CommandText = $"DELETE FROM Projects WHERE id = {id}";
                     sqlite_cmd.ExecuteNonQuery();
-                    //sqlite_cmd.CommandText = $"DELETE FROM Pictures WHERE PictureId = {project.ImageId}";
-                    //sqlite_cmd.ExecuteNonQuery();
                     string dbQuery = "SELECT * FROM Projects";
                     SQLiteCommand dbCommand = new SQLiteCommand(dbQuery, connection);
                     DataTable dataTable = new DataTable();

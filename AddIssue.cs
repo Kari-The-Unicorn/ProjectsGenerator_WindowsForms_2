@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectsGenerator_WindowsForms_2.Objects;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -18,69 +19,58 @@ namespace ProjectsGenerator_WindowsForms_2
         {
             try
             {
+                var project = MainWindow.project;
                 //var project3 = Projects.project;
-                //var imagePos1 = OpenMap.imagePos;
+                var imagePosition = OpenMap.imagePos;
 
-                //if (project3 != null)
-                //{
-                //    string issueName = tbIssueName.Text.Trim();
-                //    int projectId = project3.id;
-                //    string issueDescription = tbIssueDescription.Text.Trim();
-                //    string issuePlace = tbIssuePlace.Text.Trim();
-                //    var imageId = project3.ImageId;
-                //    var issueCoordinateX = imagePos1.X - 30;
-                //    var issueCoordinateY = imagePos1.Y - 30;
-                //    var isValid = true;
-                //    var errorMessage = string.Empty;
+                if (project != null)
+                {
+                    string issueName = tbIssueName.Text.Trim();
+                    int projectId = project.id;
+                    string issueDescription = tbIssueDescription.Text.Trim();
+                    string issuePlace = tbIssuePlace.Text.Trim();
+                    var imageId = project.ImageId;
+                    var issueCoordinateX = imagePosition.X - 30;
+                    var issueCoordinateY = imagePosition.Y - 30;
+                    var isValid = true;
+                    var errorMessage = string.Empty;
 
-                //    if (string.IsNullOrWhiteSpace(issueName))
-                //    {
-                //        isValid = false;
-                //        errorMessage = "Proszę wpisać nazwę projektu.";
-                //    }
+                    if (string.IsNullOrWhiteSpace(issueName))
+                    {
+                        isValid = false;
+                        errorMessage = "Proszę wpisać nazwę projektu.";
+                    }
+                    
+                    if (isValid)
+                    {
+                        //var projectsKonstruktorEntities = new ProjectsKonstruktorEntities();
+                        var issue = new Issue();
+                        issue.IssueName = issueName;
+                        issue.ProjectId = projectId;
+                        issue.IssueDescription = issueDescription;
+                        issue.IssuePlace = issuePlace;
+                        issue.ImageId = imageId;
+                        issue.IssueCoordinateX = issueCoordinateX;
+                        issue.IssueCoordinateY = issueCoordinateY;
 
-                //    //if (projectDateIn > projectDateOut)
-                //    //{
-                //    //    isValid = false;
-                //    //    errorMessage = "Data rozpoczęcia nie może być późniejsza niż data ukończenia.";
-                //    //}
-
-                //    //if (fileName == null)
-                //    //{
-                //    //    isValid = false;
-                //    //    errorMessage = "Proszę załączyć plik PDF.";
-                //    //}
-
-                //    if (isValid)
-                //    {
-                //        //var projectsKonstruktorEntities = new ProjectsKonstruktorEntities();
-                //        var issue = new Issue();
-                //        issue.IssueName = issueName;
-                //        issue.ProjectId = projectId;
-                //        issue.IssueDescription = issueDescription;
-                //        issue.IssuePlace = issuePlace;
-                //        issue.ImageId = imageId;
-                //        issue.IssueCoordinateX = issueCoordinateX;
-                //        issue.IssueCoordinateY = issueCoordinateY;
-
-                //        try
-                //        {
-                //            //projectsKonstruktorEntities.Issues.Add(issue);
-                //            //projectsKonstruktorEntities.SaveChanges();
-                //            MessageBox.Show("Poprawkę dodano pomyślnie.");
-                //            Close();
-                //        }
-                //        catch (Exception exc)
-                //        {
-                //            Console.WriteLine(exc.Message);
-                //            MessageBox.Show("Poprawki nie dodano.");
-                //        }
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show(errorMessage);
-                //    }
-                //}
+                        try
+                        {
+                            //projectsKonstruktorEntities.Issues.Add(issue);
+                            //projectsKonstruktorEntities.SaveChanges();
+                            MessageBox.Show("Poprawkę dodano pomyślnie.");
+                            Close();
+                        }
+                        catch (Exception exc)
+                        {
+                            Console.WriteLine(exc.Message);
+                            MessageBox.Show("Poprawki nie dodano.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show(errorMessage);
+                    }
+                }
             }
             catch (Exception ex)
             {

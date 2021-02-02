@@ -10,7 +10,7 @@ namespace ProjectsGenerator_WindowsForms_2
 {
     public partial class OpenProject : Form
     {
-        public Project project;
+        //public Project project;
         public OpenProject()
         {
             InitializeComponent();
