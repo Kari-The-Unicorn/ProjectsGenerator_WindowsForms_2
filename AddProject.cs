@@ -9,6 +9,7 @@ namespace ProjectsGenerator_WindowsForms_2
 {
     public partial class AddProject : Form
     {
+        public static Picture picture = new Picture();
         private OpenFileDialog openFile;
         private string fileName;
         public AddProject()

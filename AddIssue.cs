@@ -1,5 +1,6 @@
 ﻿using ProjectsGenerator_WindowsForms_2.Objects;
 using System;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -20,7 +21,6 @@ namespace ProjectsGenerator_WindowsForms_2
             try
             {
                 var project = MainWindow.project;
-                //var project3 = Projects.project;
                 var imagePosition = OpenMap.imagePos;
 
                 if (project != null)
@@ -40,10 +40,9 @@ namespace ProjectsGenerator_WindowsForms_2
                         isValid = false;
                         errorMessage = "Proszę wpisać nazwę projektu.";
                     }
-                    
+
                     if (isValid)
                     {
-                        //var projectsKonstruktorEntities = new ProjectsKonstruktorEntities();
                         var issue = new Issue();
                         issue.IssueName = issueName;
                         issue.ProjectId = projectId;
@@ -55,8 +54,17 @@ namespace ProjectsGenerator_WindowsForms_2
 
                         try
                         {
-                            //projectsKonstruktorEntities.Issues.Add(issue);
-                            //projectsKonstruktorEntities.SaveChanges();
+                            var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+                            string query = $@"insert into Issues(IssueName, ProjectId, IssueDescription, IssuePlace, ImageId, IssueCoordinateX, IssueCoordinateY)" +
+                                           "values('" + issue.IssueName + "','" + issue.ProjectId + "', '" + issue.IssueDescription + "', '" + issue.IssuePlace + "', '" + issue.ImageId + "', '" + issue.IssueCoordinateX + "', '" + issue.IssueCoordinateY + "')";
+
+                            using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
+                            using (SQLiteCommand dbCommand = new SQLiteCommand(query, dbConnection))
+                            {
+                                dbConnection.Open();
+                                dbCommand.ExecuteNonQuery();
+                            }
+
                             MessageBox.Show("Poprawkę dodano pomyślnie.");
                             Close();
                         }
@@ -103,4 +111,3 @@ namespace ProjectsGenerator_WindowsForms_2
         }
     }
 }
-
