@@ -40,7 +40,6 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pbMap.Margin = new System.Windows.Forms.Padding(2);
             this.pbMap.Name = "pbMap";
             this.pbMap.Size = new System.Drawing.Size(676, 555);
-            this.pbMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMap.TabIndex = 0;
             this.pbMap.TabStop = false;
             this.pbMap.Click += new System.EventHandler(this.pbMap_Click);

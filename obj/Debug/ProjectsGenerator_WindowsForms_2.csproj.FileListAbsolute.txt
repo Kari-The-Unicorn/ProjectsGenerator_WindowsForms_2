@@ -23,3 +23,4 @@ C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsG
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.OpenMap.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.EditIssue.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csprojAssemblyReference.cache
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\FontAwesome.Sharp.dll

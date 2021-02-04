@@ -131,8 +131,9 @@ namespace ProjectsGenerator_WindowsForms_2
                     if (!isEditMode)
                     {
                         imagePos = e.Location;
-                        g.DrawImage(new Bitmap(
+                       g.DrawImage(new Bitmap(
                            @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
+                        //new Point(imagePos.X - 285, imagePos.Y));
                         new Point(imagePos.X - 30, imagePos.Y - 30));
                     }
                     pbMap.Image = bmp;

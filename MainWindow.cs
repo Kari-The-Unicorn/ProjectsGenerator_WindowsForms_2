@@ -217,5 +217,25 @@ namespace ProjectsGenerator_WindowsForms_2
                 Close();
             }
         }
+
+        private void pSideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvProjects_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lInfoProjects_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
