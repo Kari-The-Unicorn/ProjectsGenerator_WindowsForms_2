@@ -12,7 +12,7 @@ namespace ProjectsGenerator_WindowsForms_2
     public partial class OpenMap : Form
     {
         public static Point imagePos = new Point();
-        private List<Issue> issuesOnMap = new List<Issue>();
+        public static List<Issue> issuesOnMap = new List<Issue>();
         private bool isEditMode;
 
         public OpenMap()

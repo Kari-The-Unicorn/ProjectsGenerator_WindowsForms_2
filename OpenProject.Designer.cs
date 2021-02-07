@@ -29,7 +29,7 @@ namespace ProjectsGenerator_WindowsForms_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pProjectInfo = new System.Windows.Forms.Panel();
             this.tbProjectInfoDateOut = new System.Windows.Forms.TextBox();
             this.tbProjectInfoDateIn = new System.Windows.Forms.TextBox();
@@ -162,6 +162,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bLoadIssues.TabIndex = 9;
             this.bLoadIssues.Text = "Odśwież listę";
             this.bLoadIssues.UseVisualStyleBackColor = false;
+            this.bLoadIssues.Click += new System.EventHandler(this.bLoadIssues_Click);
             // 
             // label1
             // 
@@ -187,9 +188,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvIssues.Margin = new System.Windows.Forms.Padding(2);
             this.dgvIssues.Name = "dgvIssues";
             this.dgvIssues.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvIssues.RowTemplate.Height = 24;
             this.dgvIssues.RowTemplate.ReadOnly = true;
             this.dgvIssues.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;

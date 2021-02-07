@@ -1,16 +1,17 @@
 ﻿using ProjectsGenerator_WindowsForms_2.Objects;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace ProjectsGenerator_WindowsForms_2
 {
     public partial class OpenProject : Form
     {
-        //public Project project;
+        public static List<Issue> issues = new List<Issue>();
+
         public OpenProject()
         {
             InitializeComponent();
@@ -18,7 +19,6 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void OpenProject_Load(object sender, EventArgs e)
         {
-
             string dbQuery = "SELECT * FROM Issues";
 
             using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
@@ -88,7 +88,7 @@ namespace ProjectsGenerator_WindowsForms_2
                         sqlite_datareader3.Close();
                     }
 
-                    ((OpenMap) newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
+                    ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
                     newMdiChildMap.ShowDialog();
                 }
             }
@@ -106,6 +106,37 @@ namespace ProjectsGenerator_WindowsForms_2
         private void pProjectInfo_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, pProjectInfo.DisplayRectangle, Color.LightSkyBlue, ButtonBorderStyle.Solid);
+        }
+
+        private void bLoadIssues_Click(object sender, EventArgs e)
+        {
+            var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+            var project = MainWindow.project;
+
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            using (SQLiteCommand sqlite_cmd2 = connection.CreateCommand())
+            {
+                connection.Open();
+                sqlite_cmd2.CommandText = $"Select * FROM Issues where ProjectId = '" + project.id + "'";
+                SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
+
+                while (sqlite_datareader2.Read())
+                {
+                    Issue issue = new Issue();
+                    issue.id = sqlite_datareader2.GetInt32(0);
+                    issue.IssueName = sqlite_datareader2.GetString(1);
+                    issue.ProjectId = sqlite_datareader2.GetInt32(2);
+                    issue.IssueDescription = sqlite_datareader2.GetString(3);
+                    issue.IssuePlace = sqlite_datareader2.GetString(4);
+                    issue.IssueCoordinateX = sqlite_datareader2.GetInt32(5);
+                    issue.IssueCoordinateY = sqlite_datareader2.GetInt32(6);
+                    issues.Add(issue);
+                }
+                sqlite_datareader2.Close();
+            }
+
+            dgvIssues.DataSource = issues;
+            dgvIssues.Refresh();
         }
     }
 }
