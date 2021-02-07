@@ -54,6 +54,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Name = "OpenMap";
             this.Text = "Mapa projektu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.OpenMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMap)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,7 +1,6 @@
 ﻿using ProjectsGenerator_WindowsForms_2.Objects;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Text.RegularExpressions;
@@ -12,7 +11,6 @@ namespace ProjectsGenerator_WindowsForms_2
 {
     public partial class OpenMap : Form
     {
-        //public Project project;
         public static Point imagePos = new Point();
         private List<Issue> issuesOnMap = new List<Issue>();
         private bool isEditMode;
@@ -23,7 +21,6 @@ namespace ProjectsGenerator_WindowsForms_2
             ToolTip tt = new ToolTip();
             tt.SetToolTip(pbMap, "Zaznacz poprawkę na mapie");
             tt.ShowAlways = true;
-            //issuesOnMap = projectsKonstruktorEntities.Issues.ToList();
         }
 
         private void pbMap_Click(object sender, EventArgs e)
@@ -57,7 +54,6 @@ namespace ProjectsGenerator_WindowsForms_2
         private void pbMap_MouseDown(object sender, MouseEventArgs e)
         {
             isEditMode = false;
-            List<Issue> issuesOnMap = new List<Issue>();
             var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -105,7 +101,6 @@ namespace ProjectsGenerator_WindowsForms_2
 
                                 if (project != null)
                                 {
-                                    //((EditIssue)newMdiChildEdit).tbProjectInfoGeneralInIssueForm.Text = project4.id.ToString() + "; ";
                                     ((EditIssue)newMdiChildEdit).tbProjectInfoGeneralInIssueForm.Text += project.ProjectName.ToString().Trim() + "; ";
                                     ((EditIssue)newMdiChildEdit).tbProjectInfoGeneralInIssueForm.Text += project.ProjectAddress.ToString().Trim() + "; ";
                                     ((EditIssue)newMdiChildEdit).tbProjectInfoGeneralInIssueForm.Text += project.ProjectCompany.ToString().Trim();
@@ -131,12 +126,51 @@ namespace ProjectsGenerator_WindowsForms_2
                     if (!isEditMode)
                     {
                         imagePos = e.Location;
-                       g.DrawImage(new Bitmap(
-                           @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
-                        //new Point(imagePos.X - 285, imagePos.Y));
-                        new Point(imagePos.X - 30, imagePos.Y - 30));
+                        g.DrawImage(new Bitmap(
+                            @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
+                         new Point(imagePos.X - 30, imagePos.Y - 30));
                     }
                     pbMap.Image = bmp;
+                }
+            }
+        }
+
+        private void OpenMap_Load(object sender, EventArgs e)
+        {
+            var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+            var project = MainWindow.project;
+
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            using (SQLiteCommand sqlite_cmd2 = connection.CreateCommand())
+            {
+                connection.Open();
+                sqlite_cmd2.CommandText = $"Select * FROM Issues where ProjectId = '" + project.id + "'";
+                SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
+
+                while (sqlite_datareader2.Read())
+                {
+                    Issue issue = new Issue();
+                    issue.id = sqlite_datareader2.GetInt32(0);
+                    issue.IssueName = sqlite_datareader2.GetString(1);
+                    issue.ProjectId = sqlite_datareader2.GetInt32(2);
+                    issue.IssueDescription = sqlite_datareader2.GetString(3);
+                    issue.IssuePlace = sqlite_datareader2.GetString(4);
+                    issue.IssueCoordinateX = sqlite_datareader2.GetInt32(5);
+                    issue.IssueCoordinateY = sqlite_datareader2.GetInt32(6);
+                    issuesOnMap.Add(issue);
+                }
+                sqlite_datareader2.Close();
+            }
+
+            foreach (var issueOnMap in issuesOnMap)
+            {
+                Bitmap bmp1 = new Bitmap(pbMap.Image);
+                using (Graphics g = Graphics.FromImage(bmp1))
+                {
+                    g.DrawImage(new Bitmap(
+                       @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
+                    new Point((int)issueOnMap.IssueCoordinateX, (int)issueOnMap.IssueCoordinateY));
+                    pbMap.Image = bmp1;
                 }
             }
         }
