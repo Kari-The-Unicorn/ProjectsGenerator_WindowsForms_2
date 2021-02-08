@@ -13,6 +13,7 @@ namespace ProjectsGenerator_WindowsForms_2
     {
         public static Point imagePos = new Point();
         public static List<Issue> issuesOnMap = new List<Issue>();
+        public static Issue issue = new Issue();
         private bool isEditMode;
 
         public OpenMap()
@@ -23,7 +24,7 @@ namespace ProjectsGenerator_WindowsForms_2
             tt.ShowAlways = true;
         }
 
-        private void pbMap_Click(object sender, EventArgs e)
+        public void pbMap_Click(object sender, EventArgs e)
         {
             Thread.Sleep(500);
             AddIssue newMdiChildEdit = new AddIssue();
@@ -135,7 +136,7 @@ namespace ProjectsGenerator_WindowsForms_2
             }
         }
 
-        private void OpenMap_Load(object sender, EventArgs e)
+        public void OpenMap_Load(object sender, EventArgs e)
         {
             var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
             var project = MainWindow.project;

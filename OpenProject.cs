@@ -45,7 +45,7 @@ namespace ProjectsGenerator_WindowsForms_2
 
         }
 
-        private void bShowMap_Click(object sender, EventArgs e)
+        public void bShowMap_Click(object sender, EventArgs e)
         {
             OpenMap newMdiChildMap = new OpenMap();
             try
