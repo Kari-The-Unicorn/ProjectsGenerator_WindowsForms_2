@@ -64,12 +64,15 @@ namespace ProjectsGenerator_WindowsForms_2
                     //project.ImageId = picture.PictureId;
                     picture.PictureContent = ConvertImageToByteArray(imageContent);
                     byte[] pictureContent = picture.PictureContent;
+                    Image img = Image.FromFile(picture.PictureName);
+                    picture.PictureWidth = img.Width;
+                    picture.PictureHeight = img.Height;
 
                     try
                     {
                         string query = $@"insert into Projects(ProjectName, ProjectAddress, ProjectCompany, ProjectState, ProjectDateIn, ProjectDateOut, ImageId)" +
-                                       "values('" + project.ProjectName + "','" + project.ProjectAddress + "', '" + project.ProjectCompany + "', '" + project.ProjectState + "', '" + project.ProjectDateIn + "', '" + project.ProjectDateOut + "', '" + project.ImageId + "'); insert into Pictures(PictureName, PictureContent)" +
-                                       "values('" + picture.PictureName + "', '" + pictureContent + "')";
+                                       "values('" + project.ProjectName + "','" + project.ProjectAddress + "', '" + project.ProjectCompany + "', '" + project.ProjectState + "', '" + project.ProjectDateIn + "', '" + project.ProjectDateOut + "', '" + project.ImageId + "'); insert into Pictures(PictureName, PictureContent, PictureWidth, PictureHeight)" +
+                                       "values('" + picture.PictureName + "', '" + pictureContent + "', '" + picture.PictureWidth + "', '" + picture.PictureHeight + "')";
 
                         using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
                         using (SQLiteCommand dbCommand = new SQLiteCommand(query, dbConnection))
@@ -99,7 +102,7 @@ namespace ProjectsGenerator_WindowsForms_2
                                     sqlite_datareader.Close();
                                 }
                             }
-                            string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE ProjectName = '" +  project.ProjectName + "'";
+                            string query3 = $@"UPDATE Projects SET ImageId = '{picture.PictureId}' WHERE ProjectName = '" + project.ProjectName + "'";
 
                             using (SQLiteCommand dbCommand3 = new SQLiteCommand(query3, dbConnection2))
                             {

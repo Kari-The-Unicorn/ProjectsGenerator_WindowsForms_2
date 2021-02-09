@@ -15,10 +15,13 @@ namespace ProjectsGenerator_WindowsForms_2
         public static List<Issue> issuesOnMap = new List<Issue>();
         public static Issue issue = new Issue();
         private bool isEditMode;
+        
 
         public OpenMap()
         {
+            //var picture = AddProject.picture;
             InitializeComponent();
+            //this.Size = new Size(picture.PictureWidth, picture.PictureHeight);
             ToolTip tt = new ToolTip();
             tt.SetToolTip(pbMap, "Zaznacz poprawkę na mapie");
             tt.ShowAlways = true;

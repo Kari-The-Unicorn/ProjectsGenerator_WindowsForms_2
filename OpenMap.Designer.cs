@@ -52,8 +52,8 @@ namespace ProjectsGenerator_WindowsForms_2
             this.ClientSize = new System.Drawing.Size(676, 555);
             this.Controls.Add(this.pbMap);
             this.Name = "OpenMap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mapa projektu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OpenMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMap)).EndInit();
             this.ResumeLayout(false);

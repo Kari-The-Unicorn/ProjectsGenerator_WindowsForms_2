@@ -50,9 +50,10 @@ namespace ProjectsGenerator_WindowsForms_2
             OpenMap newMdiChildMap = new OpenMap();
             try
             {
-                var project = MainWindow.project;
+                Project project = MainWindow.project;
+                Picture picture = new Picture();
 
-                var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+                string connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
                 using (SQLiteConnection connection2 = new SQLiteConnection(connectionString))
                 using (SQLiteCommand sqlite_cmd2 = connection2.CreateCommand())
                 {
@@ -83,12 +84,16 @@ namespace ProjectsGenerator_WindowsForms_2
                         if (sqlite_datareader3.Read())
                         {
                             pictureSrc = sqlite_datareader3.GetString(1);
+                            picture.PictureWidth = sqlite_datareader3.GetInt32(3);
+                            picture.PictureHeight = sqlite_datareader3.GetInt32(4);
                             //pictureContent = sqlite_datareader3.GetFieldValue<byte[]>(2);
                         }
                         sqlite_datareader3.Close();
                     }
 
                     ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
+                    ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Normal;
+                    ((OpenMap)newMdiChildMap).Size = new Size(picture.PictureWidth + 10, picture.PictureHeight + 10);
                     newMdiChildMap.ShowDialog();
                 }
             }
