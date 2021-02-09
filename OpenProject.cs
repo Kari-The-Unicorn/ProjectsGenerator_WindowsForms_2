@@ -36,6 +36,7 @@ namespace ProjectsGenerator_WindowsForms_2
             dgvIssues.Columns["IssuePlace"].HeaderText = "Lokalizacja";
             dgvIssues.Columns["id"].Visible = false;
             dgvIssues.Columns["ProjectId"].Visible = false;
+            dgvIssues.Columns["ImageId"].Visible = false;
             dgvIssues.Columns["IssueCoordinateX"].Visible = false;
             dgvIssues.Columns["IssueCoordinateY"].Visible = false;
         }

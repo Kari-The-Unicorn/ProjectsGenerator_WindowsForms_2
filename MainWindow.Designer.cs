@@ -30,6 +30,8 @@ namespace ProjectsGenerator_WindowsForms_2
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pSideMenu = new System.Windows.Forms.Panel();
             this.bDeleteProject = new FontAwesome.Sharp.IconButton();
             this.bEditProject = new FontAwesome.Sharp.IconButton();
@@ -147,22 +149,37 @@ namespace ProjectsGenerator_WindowsForms_2
             // dgvProjects
             // 
             this.dgvProjects.AllowUserToAddRows = false;
+            this.dgvProjects.AllowUserToDeleteRows = false;
             this.dgvProjects.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProjects.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvProjects.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjects.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProjects.Location = new System.Drawing.Point(128, 25);
+            this.dgvProjects.Margin = new System.Windows.Forms.Padding(5);
             this.dgvProjects.Name = "dgvProjects";
-            this.dgvProjects.Size = new System.Drawing.Size(780, 513);
-            this.dgvProjects.TabIndex = 3;
+            this.dgvProjects.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjects.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProjects.Size = new System.Drawing.Size(955, 513);
+            this.dgvProjects.TabIndex = 0;
             this.dgvProjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjects_CellContentClick);
             // 
             // lInfoProjects
@@ -183,7 +200,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 537);
+            this.ClientSize = new System.Drawing.Size(1083, 537);
             this.Controls.Add(this.dgvProjects);
             this.Controls.Add(this.lInfoProjects);
             this.Controls.Add(this.pSideMenu);

@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ProjectsGenerator_WindowsForms_2.Objects;
 
@@ -148,8 +149,10 @@ namespace ProjectsGenerator_WindowsForms_2
                                                                     project.ProjectAddress + "; " +
                                                                     project.ProjectCompany + "; " +
                                                                     project.ProjectState;
-                        newMdiChildOpen.tbProjectInfoDateIn.Text = project.ProjectDateIn.ToString();
-                        newMdiChildOpen.tbProjectInfoDateOut.Text = project.ProjectDateOut.ToString();
+                        newMdiChildOpen.tbProjectInfoDateIn.Text = Regex.Replace(project.ProjectDateIn.ToString(),
+                        @"\s(.*)", string.Empty, RegexOptions.IgnoreCase);
+                        newMdiChildOpen.tbProjectInfoDateOut.Text = Regex.Replace(project.ProjectDateOut.ToString(),
+                        @"\s(.*)", string.Empty, RegexOptions.IgnoreCase);
                         sqlite_datareader.Close();
                         newMdiChildOpen.ShowDialog();
                     }
