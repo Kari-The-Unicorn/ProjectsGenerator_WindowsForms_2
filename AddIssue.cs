@@ -107,7 +107,7 @@ namespace ProjectsGenerator_WindowsForms_2
             }
             //var form2 = new OpenMap();
             //form2.OpenMap_Load(sender, e);
-            //openProject.bShowMap_Click(sender, e);
+            openProject.bShowMap_Click(sender, e);
         }
     }
 }
