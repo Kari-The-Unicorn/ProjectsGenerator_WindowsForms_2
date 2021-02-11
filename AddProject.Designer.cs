@@ -210,7 +210,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.bUploadImage.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.bUploadImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bUploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bUploadImage.FlatAppearance.BorderSize = 0;
+            this.bUploadImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bUploadImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.bUploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bUploadImage.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bUploadImage.Location = new System.Drawing.Point(150, 324);
             this.bUploadImage.Margin = new System.Windows.Forms.Padding(2);
@@ -220,6 +223,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bUploadImage.Text = "Załaduj mapę";
             this.bUploadImage.UseVisualStyleBackColor = false;
             this.bUploadImage.Click += new System.EventHandler(this.bUploadImage_Click);
+            this.bUploadImage.Paint += new System.Windows.Forms.PaintEventHandler(this.bUploadImage_Paint);
             // 
             // lLoadedImageInfo
             // 
@@ -258,8 +262,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.bCancelAddingProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(9)))), ((int)(((byte)(0)))));
             this.bCancelAddingProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCancelAddingProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bCancelAddingProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bCancelAddingProject.FlatAppearance.BorderSize = 0;
+            this.bCancelAddingProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.bCancelAddingProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.bCancelAddingProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCancelAddingProject.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCancelAddingProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelAddingProject.Location = new System.Drawing.Point(151, 449);
@@ -270,13 +276,16 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingProject.Text = "Anuluj";
             this.bCancelAddingProject.UseVisualStyleBackColor = false;
             this.bCancelAddingProject.Click += new System.EventHandler(this.bCancelAddingProject_Click);
+            this.bCancelAddingProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bCancelAddingProject_Paint);
             // 
             // bAddProject
             // 
             this.bAddProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(125)))), ((int)(((byte)(75)))));
             this.bAddProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAddProject.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bAddProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bAddProject.FlatAppearance.BorderSize = 0;
+            this.bAddProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.bAddProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.bAddProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAddProject.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bAddProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bAddProject.Location = new System.Drawing.Point(1, 449);
@@ -287,6 +296,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddProject.Text = "Dodaj projekt";
             this.bAddProject.UseVisualStyleBackColor = false;
             this.bAddProject.Click += new System.EventHandler(this.bAddProject_Click);
+            this.bAddProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bAddProject_Paint);
             // 
             // AddProject
             // 

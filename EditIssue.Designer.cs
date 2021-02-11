@@ -54,7 +54,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // bDeleteIssue
             // 
             this.bDeleteIssue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(118)))), ((int)(((byte)(19)))));
-            this.bDeleteIssue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bDeleteIssue.FlatAppearance.BorderSize = 0;
+            this.bDeleteIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bDeleteIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bDeleteIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bDeleteIssue.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bDeleteIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bDeleteIssue.Location = new System.Drawing.Point(167, 455);
@@ -65,6 +68,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bDeleteIssue.Text = "Usuń poprawkę";
             this.bDeleteIssue.UseVisualStyleBackColor = false;
             this.bDeleteIssue.Click += new System.EventHandler(this.bDeleteIssue_Click);
+            this.bDeleteIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bDeleteIssue_Paint);
             // 
             // tbProjectInfoDateOutInIssueForm
             // 
@@ -246,7 +250,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // bCancelAddingIssue
             // 
             this.bCancelAddingIssue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(9)))), ((int)(((byte)(0)))));
-            this.bCancelAddingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bCancelAddingIssue.FlatAppearance.BorderSize = 0;
+            this.bCancelAddingIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.bCancelAddingIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bCancelAddingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCancelAddingIssue.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCancelAddingIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelAddingIssue.Location = new System.Drawing.Point(320, 455);
@@ -257,11 +264,15 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingIssue.Text = "Anuluj";
             this.bCancelAddingIssue.UseVisualStyleBackColor = false;
             this.bCancelAddingIssue.Click += new System.EventHandler(this.bCancelAddingIssue_Click);
+            this.bCancelAddingIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bCancelAddingIssue_Paint);
             // 
             // bSaveEditingIssue
             // 
             this.bSaveEditingIssue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(125)))), ((int)(((byte)(75)))));
-            this.bSaveEditingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bSaveEditingIssue.FlatAppearance.BorderSize = 0;
+            this.bSaveEditingIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.bSaveEditingIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bSaveEditingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bSaveEditingIssue.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bSaveEditingIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bSaveEditingIssue.Location = new System.Drawing.Point(14, 455);
@@ -272,6 +283,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bSaveEditingIssue.Text = "Zapisz zmiany";
             this.bSaveEditingIssue.UseVisualStyleBackColor = false;
             this.bSaveEditingIssue.Click += new System.EventHandler(this.bSaveEditingIssue_Click);
+            this.bSaveEditingIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bSaveEditingIssue_Paint);
             // 
             // EditIssue
             // 

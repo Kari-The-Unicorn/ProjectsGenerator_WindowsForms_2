@@ -240,5 +240,41 @@ namespace ProjectsGenerator_WindowsForms_2
         {
 
         }
+
+        private void bNewProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bNewProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bOpenProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bOpenProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bEditProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bEditProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bDeleteProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bDeleteProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
     }
 }

@@ -109,5 +109,23 @@ namespace ProjectsGenerator_WindowsForms_2
             //form2.OpenMap_Load(sender, e);
             openProject.bShowMap_Click(sender, e);
         }
+
+        private void bCancelAddingIssue_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bCancelAddingIssue.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bAddIssue_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bAddIssue.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
     }
 }

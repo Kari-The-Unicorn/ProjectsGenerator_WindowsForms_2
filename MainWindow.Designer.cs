@@ -54,7 +54,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pSideMenu.Location = new System.Drawing.Point(0, 0);
             this.pSideMenu.Name = "pSideMenu";
-            this.pSideMenu.Size = new System.Drawing.Size(125, 537);
+            this.pSideMenu.Size = new System.Drawing.Size(143, 537);
             this.pSideMenu.TabIndex = 2;
             this.pSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pSideMenu_Paint);
             // 
@@ -62,6 +62,9 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.bDeleteProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bDeleteProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bDeleteProject.FlatAppearance.BorderSize = 0;
+            this.bDeleteProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bDeleteProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bDeleteProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.bDeleteProject.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.bDeleteProject.IconColor = System.Drawing.Color.Black;
@@ -69,18 +72,22 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bDeleteProject.IconSize = 20;
             this.bDeleteProject.Location = new System.Drawing.Point(0, 215);
             this.bDeleteProject.Name = "bDeleteProject";
-            this.bDeleteProject.Size = new System.Drawing.Size(125, 47);
+            this.bDeleteProject.Size = new System.Drawing.Size(143, 47);
             this.bDeleteProject.TabIndex = 11;
             this.bDeleteProject.Text = "Usuń";
             this.bDeleteProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bDeleteProject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bDeleteProject.UseVisualStyleBackColor = true;
             this.bDeleteProject.Click += new System.EventHandler(this.bDeleteProject_Click);
+            this.bDeleteProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bDeleteProject_Paint);
             // 
             // bEditProject
             // 
             this.bEditProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bEditProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bEditProject.FlatAppearance.BorderSize = 0;
+            this.bEditProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bEditProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.bEditProject.IconChar = FontAwesome.Sharp.IconChar.Edit;
             this.bEditProject.IconColor = System.Drawing.Color.Black;
@@ -88,18 +95,22 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bEditProject.IconSize = 20;
             this.bEditProject.Location = new System.Drawing.Point(0, 168);
             this.bEditProject.Name = "bEditProject";
-            this.bEditProject.Size = new System.Drawing.Size(125, 47);
+            this.bEditProject.Size = new System.Drawing.Size(143, 47);
             this.bEditProject.TabIndex = 10;
             this.bEditProject.Text = "Edytuj";
             this.bEditProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bEditProject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bEditProject.UseVisualStyleBackColor = true;
             this.bEditProject.Click += new System.EventHandler(this.bEditProject_Click);
+            this.bEditProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bEditProject_Paint);
             // 
             // bOpenProject
             // 
             this.bOpenProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bOpenProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bOpenProject.FlatAppearance.BorderSize = 0;
+            this.bOpenProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bOpenProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bOpenProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.bOpenProject.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
             this.bOpenProject.IconColor = System.Drawing.Color.Black;
@@ -107,18 +118,22 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bOpenProject.IconSize = 20;
             this.bOpenProject.Location = new System.Drawing.Point(0, 121);
             this.bOpenProject.Name = "bOpenProject";
-            this.bOpenProject.Size = new System.Drawing.Size(125, 47);
+            this.bOpenProject.Size = new System.Drawing.Size(143, 47);
             this.bOpenProject.TabIndex = 9;
             this.bOpenProject.Text = "Otwórz";
             this.bOpenProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bOpenProject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bOpenProject.UseVisualStyleBackColor = true;
             this.bOpenProject.Click += new System.EventHandler(this.bOpenProject_Click);
+            this.bOpenProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bOpenProject_Paint);
             // 
             // bNewProject
             // 
             this.bNewProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bNewProject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bNewProject.FlatAppearance.BorderSize = 0;
+            this.bNewProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bNewProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNewProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.bNewProject.IconChar = FontAwesome.Sharp.IconChar.PenNib;
             this.bNewProject.IconColor = System.Drawing.Color.Black;
@@ -126,13 +141,14 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bNewProject.IconSize = 20;
             this.bNewProject.Location = new System.Drawing.Point(0, 74);
             this.bNewProject.Name = "bNewProject";
-            this.bNewProject.Size = new System.Drawing.Size(125, 47);
+            this.bNewProject.Size = new System.Drawing.Size(143, 47);
             this.bNewProject.TabIndex = 7;
             this.bNewProject.Text = "Dodaj";
             this.bNewProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bNewProject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bNewProject.UseVisualStyleBackColor = true;
             this.bNewProject.Click += new System.EventHandler(this.bNewProject_Click);
+            this.bNewProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bNewProject_Paint);
             // 
             // pLogo
             // 
@@ -142,7 +158,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pLogo.Location = new System.Drawing.Point(0, 0);
             this.pLogo.Name = "pLogo";
-            this.pLogo.Size = new System.Drawing.Size(125, 74);
+            this.pLogo.Size = new System.Drawing.Size(143, 74);
             this.pLogo.TabIndex = 0;
             this.pLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pLogo_Paint);
             // 
@@ -171,14 +187,14 @@ namespace ProjectsGenerator_WindowsForms_2
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProjects.Location = new System.Drawing.Point(128, 25);
+            this.dgvProjects.Location = new System.Drawing.Point(147, 25);
             this.dgvProjects.Margin = new System.Windows.Forms.Padding(5);
             this.dgvProjects.Name = "dgvProjects";
             this.dgvProjects.RowHeadersWidth = 51;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProjects.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProjects.Size = new System.Drawing.Size(955, 513);
+            this.dgvProjects.Size = new System.Drawing.Size(936, 513);
             this.dgvProjects.TabIndex = 0;
             this.dgvProjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjects_CellContentClick);
             // 
@@ -187,7 +203,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.lInfoProjects.AutoSize = true;
             this.lInfoProjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.lInfoProjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lInfoProjects.Location = new System.Drawing.Point(125, 0);
+            this.lInfoProjects.Location = new System.Drawing.Point(143, 0);
             this.lInfoProjects.Name = "lInfoProjects";
             this.lInfoProjects.Size = new System.Drawing.Size(697, 24);
             this.lInfoProjects.TabIndex = 4;

@@ -140,7 +140,9 @@ namespace ProjectsGenerator_WindowsForms_2
             // bShowMap
             // 
             this.bShowMap.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bShowMap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bShowMap.FlatAppearance.BorderSize = 0;
+            this.bShowMap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bShowMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bShowMap.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bShowMap.Location = new System.Drawing.Point(943, 58);
             this.bShowMap.Margin = new System.Windows.Forms.Padding(2);
@@ -150,10 +152,14 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bShowMap.Text = "Pokaż mapę";
             this.bShowMap.UseVisualStyleBackColor = false;
             this.bShowMap.Click += new System.EventHandler(this.bShowMap_Click);
+            this.bShowMap.Paint += new System.Windows.Forms.PaintEventHandler(this.bShowMap_Paint);
             // 
             // bLoadIssues
             // 
             this.bLoadIssues.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bLoadIssues.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bLoadIssues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bLoadIssues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bLoadIssues.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bLoadIssues.Location = new System.Drawing.Point(256, 71);
             this.bLoadIssues.Margin = new System.Windows.Forms.Padding(2);
@@ -163,6 +169,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bLoadIssues.Text = "Odśwież listę";
             this.bLoadIssues.UseVisualStyleBackColor = false;
             this.bLoadIssues.Click += new System.EventHandler(this.bLoadIssues_Click);
+            this.bLoadIssues.Paint += new System.Windows.Forms.PaintEventHandler(this.bLoadIssues_Paint);
             // 
             // label1
             // 

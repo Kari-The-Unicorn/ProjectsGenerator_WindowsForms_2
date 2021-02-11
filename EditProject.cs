@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SQLite;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjectsGenerator_WindowsForms_2
@@ -64,6 +65,24 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void EditProject_Load(object sender, EventArgs e)
         {
+        }
+
+        private void bCancelEditingProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bCancelEditingProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bEditProject_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bEditProject.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
         }
     }
 }

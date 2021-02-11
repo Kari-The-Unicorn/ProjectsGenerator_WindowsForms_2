@@ -52,7 +52,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // bAddIssue
             // 
             this.bAddIssue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(125)))), ((int)(((byte)(75)))));
-            this.bAddIssue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bAddIssue.FlatAppearance.BorderSize = 0;
+            this.bAddIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bAddIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bAddIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAddIssue.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bAddIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bAddIssue.Location = new System.Drawing.Point(11, 405);
@@ -63,11 +66,15 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddIssue.Text = "Dodaj poprawkę";
             this.bAddIssue.UseVisualStyleBackColor = false;
             this.bAddIssue.Click += new System.EventHandler(this.bAddIssue_Click);
+            this.bAddIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bAddIssue_Paint);
             // 
             // bCancelAddingIssue
             // 
             this.bCancelAddingIssue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(9)))), ((int)(((byte)(0)))));
-            this.bCancelAddingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bCancelAddingIssue.FlatAppearance.BorderSize = 0;
+            this.bCancelAddingIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bCancelAddingIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bCancelAddingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCancelAddingIssue.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCancelAddingIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelAddingIssue.Location = new System.Drawing.Point(165, 405);
@@ -78,6 +85,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingIssue.Text = "Anuluj";
             this.bCancelAddingIssue.UseVisualStyleBackColor = false;
             this.bCancelAddingIssue.Click += new System.EventHandler(this.bCancelAddingIssue_Click);
+            this.bCancelAddingIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bCancelAddingIssue_Paint);
             // 
             // tlpAddIssueForm
             // 

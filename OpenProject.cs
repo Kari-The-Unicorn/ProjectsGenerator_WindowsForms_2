@@ -144,5 +144,23 @@ namespace ProjectsGenerator_WindowsForms_2
             dgvIssues.DataSource = issues;
             dgvIssues.Refresh();
         }
+
+        private void bShowMap_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bShowMap.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void bLoadIssues_Paint(object sender, PaintEventArgs e)
+        {
+            // 3D button style
+            ControlPaint.DrawBorder(e.Graphics, bLoadIssues.ClientRectangle, SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
+            SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
     }
 }

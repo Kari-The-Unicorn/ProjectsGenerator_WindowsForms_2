@@ -226,7 +226,9 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.bCancelEditingProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(9)))), ((int)(((byte)(0)))));
             this.bCancelEditingProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCancelEditingProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bCancelEditingProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.bCancelEditingProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bCancelEditingProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCancelEditingProject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCancelEditingProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelEditingProject.Location = new System.Drawing.Point(164, 452);
@@ -237,12 +239,16 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelEditingProject.Text = "Anuluj";
             this.bCancelEditingProject.UseVisualStyleBackColor = false;
             this.bCancelEditingProject.Click += new System.EventHandler(this.bCancelEditingProject_Click);
+            this.bCancelEditingProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bCancelEditingProject_Paint);
             // 
             // bEditProject
             // 
             this.bEditProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(125)))), ((int)(((byte)(75)))));
             this.bEditProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bEditProject.FlatAppearance.BorderSize = 0;
+            this.bEditProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.bEditProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bEditProject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bEditProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bEditProject.Location = new System.Drawing.Point(11, 452);
@@ -253,6 +259,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bEditProject.Text = "Zapisz";
             this.bEditProject.UseVisualStyleBackColor = false;
             this.bEditProject.Click += new System.EventHandler(this.bEditProject_Click);
+            this.bEditProject.Paint += new System.Windows.Forms.PaintEventHandler(this.bEditProject_Paint);
             // 
             // EditProject
             // 
