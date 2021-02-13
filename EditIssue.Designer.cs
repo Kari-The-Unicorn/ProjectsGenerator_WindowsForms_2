@@ -138,6 +138,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // lId
             // 
             this.lId.AutoSize = true;
+            this.lId.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lId.Location = new System.Drawing.Point(486, 455);
             this.lId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lId.Name = "lId";
