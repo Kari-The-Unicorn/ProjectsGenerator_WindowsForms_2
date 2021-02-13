@@ -158,5 +158,10 @@ namespace ProjectsGenerator_WindowsForms_2
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
         }
+
+        private void EditIssue_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

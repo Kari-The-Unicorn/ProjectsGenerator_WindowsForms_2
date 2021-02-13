@@ -58,29 +58,31 @@ namespace ProjectsGenerator_WindowsForms_2
         private void pbMap_MouseDown(object sender, MouseEventArgs e)
         {
             isEditMode = false;
-            //var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+            issuesOnMap = new List<Issue>();
+            var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
+            var project = MainWindow.project;
 
-            //using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            //using (SQLiteCommand sqlite_cmd2 = connection.CreateCommand())
-            //{
-            //    connection.Open();
-            //    sqlite_cmd2.CommandText = $"Select * FROM Issues";
-            //    SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            using (SQLiteCommand sqlite_cmd2 = connection.CreateCommand())
+            {
+                connection.Open();
+                sqlite_cmd2.CommandText = $"Select * FROM Issues where ProjectId = '" + project.id + "'";
+                SQLiteDataReader sqlite_datareader2 = sqlite_cmd2.ExecuteReader();
 
-            //    while (sqlite_datareader2.Read())
-            //    {
-            //        Issue issue = new Issue();
-            //        issue.id = sqlite_datareader2.GetInt32(0);
-            //        issue.IssueName = sqlite_datareader2.GetString(1);
-            //        issue.ProjectId = sqlite_datareader2.GetInt32(2);
-            //        issue.IssueDescription = sqlite_datareader2.GetString(3);
-            //        issue.IssuePlace = sqlite_datareader2.GetString(4);
-            //        issue.IssueCoordinateX = sqlite_datareader2.GetInt32(5);
-            //        issue.IssueCoordinateX = sqlite_datareader2.GetInt32(6);
-            //        issuesOnMap.Add(issue);
-            //    }
-            //    sqlite_datareader2.Close();
-            //}
+                while (sqlite_datareader2.Read())
+                {
+                    Issue issue = new Issue();
+                    issue.id = sqlite_datareader2.GetInt32(0);
+                    issue.IssueName = sqlite_datareader2.GetString(1);
+                    issue.ProjectId = sqlite_datareader2.GetInt32(2);
+                    issue.IssueDescription = sqlite_datareader2.GetString(3);
+                    issue.IssuePlace = sqlite_datareader2.GetString(4);
+                    issue.IssueCoordinateX = sqlite_datareader2.GetInt32(5);
+                    issue.IssueCoordinateY = sqlite_datareader2.GetInt32(6);
+                    issuesOnMap.Add(issue);
+                }
+                sqlite_datareader2.Close();
+            }
 
             Bitmap bmp = new Bitmap(pbMap.Image);
             using (Graphics g = Graphics.FromImage(bmp))
@@ -99,7 +101,7 @@ namespace ProjectsGenerator_WindowsForms_2
 
                             try
                             {
-                                var project = MainWindow.project;
+                                //project = MainWindow.project;
                                 var image = AddProject.picture;
                                 var imagePos2 = OpenMap.imagePos;
 

@@ -298,6 +298,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Controls.Add(this.bSaveEditingIssue);
             this.Name = "EditIssue";
             this.Text = "EditIssue";
+            this.Load += new System.EventHandler(this.EditIssue_Load);
             this.tlpAddIssueForm.ResumeLayout(false);
             this.tlpAddIssueForm.PerformLayout();
             this.pProjectInfoInIssueForm.ResumeLayout(false);

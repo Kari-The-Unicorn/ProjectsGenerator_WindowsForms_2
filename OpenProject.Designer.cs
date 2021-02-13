@@ -29,7 +29,7 @@ namespace ProjectsGenerator_WindowsForms_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pProjectInfo = new System.Windows.Forms.Panel();
             this.tbProjectInfoDateOut = new System.Windows.Forms.TextBox();
             this.tbProjectInfoDateIn = new System.Windows.Forms.TextBox();
@@ -139,15 +139,14 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // bShowMap
             // 
-            this.bShowMap.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bShowMap.FlatAppearance.BorderSize = 0;
-            this.bShowMap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bShowMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bShowMap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.bShowMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bShowMap.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bShowMap.Location = new System.Drawing.Point(943, 58);
+            this.bShowMap.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bShowMap.Location = new System.Drawing.Point(922, 58);
             this.bShowMap.Margin = new System.Windows.Forms.Padding(2);
             this.bShowMap.Name = "bShowMap";
-            this.bShowMap.Size = new System.Drawing.Size(121, 35);
+            this.bShowMap.Size = new System.Drawing.Size(142, 42);
             this.bShowMap.TabIndex = 10;
             this.bShowMap.Text = "Pokaż mapę";
             this.bShowMap.UseVisualStyleBackColor = false;
@@ -156,15 +155,15 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // bLoadIssues
             // 
-            this.bLoadIssues.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bLoadIssues.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bLoadIssues.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bLoadIssues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bLoadIssues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bLoadIssues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bLoadIssues.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bLoadIssues.Location = new System.Drawing.Point(256, 71);
+            this.bLoadIssues.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bLoadIssues.Location = new System.Drawing.Point(256, 57);
             this.bLoadIssues.Margin = new System.Windows.Forms.Padding(2);
             this.bLoadIssues.Name = "bLoadIssues";
-            this.bLoadIssues.Size = new System.Drawing.Size(105, 24);
+            this.bLoadIssues.Size = new System.Drawing.Size(152, 43);
             this.bLoadIssues.TabIndex = 9;
             this.bLoadIssues.Text = "Odśwież listę";
             this.bLoadIssues.UseVisualStyleBackColor = false;
@@ -195,9 +194,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvIssues.Margin = new System.Windows.Forms.Padding(2);
             this.dgvIssues.Name = "dgvIssues";
             this.dgvIssues.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvIssues.RowTemplate.Height = 24;
             this.dgvIssues.RowTemplate.ReadOnly = true;
             this.dgvIssues.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;

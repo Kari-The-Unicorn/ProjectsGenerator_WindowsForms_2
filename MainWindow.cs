@@ -31,6 +31,7 @@ namespace ProjectsGenerator_WindowsForms_2
                 dbAdapter.Fill(dataTable);
                 dgvProjects.DataSource = dataTable;
             }
+            dgvProjects.Columns["Id"].Visible = false;
             dgvProjects.Columns["ImageId"].Visible = false;
             dgvProjects.Columns["ProjectName"].HeaderText = "Nazwa";
             dgvProjects.Columns["ProjectAddress"].HeaderText = "Adres";
