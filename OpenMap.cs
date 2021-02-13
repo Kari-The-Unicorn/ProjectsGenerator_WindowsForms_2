@@ -141,6 +141,7 @@ namespace ProjectsGenerator_WindowsForms_2
 
         public void OpenMap_Load(object sender, EventArgs e)
         {
+            List<Issue> issuesOnMap = new List<Issue>();
             var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
             var project = MainWindow.project;
 

@@ -19,7 +19,8 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void OpenProject_Load(object sender, EventArgs e)
         {
-            string dbQuery = "SELECT * FROM Issues";
+            Project project = MainWindow.project;
+            string dbQuery = "SELECT * FROM Issues where ProjectId = '" + project.id + "'";
 
             using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
             using (SQLiteCommand dbCommand = new SQLiteCommand(dbQuery, dbConnection))
@@ -96,6 +97,7 @@ namespace ProjectsGenerator_WindowsForms_2
                     ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Normal;
                     ((OpenMap)newMdiChildMap).Size = new Size(picture.PictureWidth + 10, picture.PictureHeight + 10);
                     newMdiChildMap.ShowDialog();
+                    
                 }
             }
             catch (Exception ex)
@@ -116,6 +118,7 @@ namespace ProjectsGenerator_WindowsForms_2
 
         private void bLoadIssues_Click(object sender, EventArgs e)
         {
+            List<Issue> issues = new List<Issue>();
             var connectionString = "Data Source=|DataDirectory|/db/db.db; version=3";
             var project = MainWindow.project;
 
