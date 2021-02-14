@@ -94,6 +94,7 @@ namespace ProjectsGenerator_WindowsForms_2
                     }
 
                     ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
+                    
                     ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Normal;
                     ((OpenMap)newMdiChildMap).Size = new Size(picture.PictureWidth + 10, picture.PictureHeight + 10);
                     newMdiChildMap.ShowDialog();

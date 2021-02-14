@@ -1,5 +1,4 @@
 ﻿using ProjectsGenerator_WindowsForms_2.Objects;
-using ProjectsGenerator_WindowsForms_2.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
@@ -16,13 +15,11 @@ namespace ProjectsGenerator_WindowsForms_2
         public static List<Issue> issuesOnMap = new List<Issue>();
         public static Issue issue = new Issue();
         private bool isEditMode;
-        
+        private Image redCircle = Image.FromFile(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Images\redcircle.png"));
 
         public OpenMap()
         {
-            //var picture = AddProject.picture;
             InitializeComponent();
-            //this.Size = new Size(picture.PictureWidth, picture.PictureHeight);
             ToolTip tt = new ToolTip();
             tt.SetToolTip(pbMap, "Zaznacz poprawkę na mapie");
             tt.ShowAlways = true;
@@ -102,7 +99,6 @@ namespace ProjectsGenerator_WindowsForms_2
 
                             try
                             {
-                                //project = MainWindow.project;
                                 var image = AddProject.picture;
                                 var imagePos2 = OpenMap.imagePos;
 
@@ -132,7 +128,6 @@ namespace ProjectsGenerator_WindowsForms_2
                     }
                     if (!isEditMode)
                     {
-                        var redCircle = Resources.redcircle;
                         imagePos = e.Location;
                         g.DrawImage(new Bitmap(redCircle),
                          new Point(imagePos.X - 30, imagePos.Y - 30));
@@ -176,7 +171,7 @@ namespace ProjectsGenerator_WindowsForms_2
                 using (Graphics g = Graphics.FromImage(bmp1))
                 {
                     g.DrawImage(new Bitmap(
-                       @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
+                       redCircle),
                     new Point((int)issueOnMap.IssueCoordinateX, (int)issueOnMap.IssueCoordinateY));
                     pbMap.Image = bmp1;
                 }

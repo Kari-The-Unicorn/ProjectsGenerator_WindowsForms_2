@@ -12,6 +12,7 @@ namespace ProjectsGenerator_WindowsForms_2
         public static Picture picture = new Picture();
         private OpenFileDialog openFile;
         private string fileName;
+        private string safeFileName;
         public AddProject()
         {
             InitializeComponent();
@@ -67,6 +68,10 @@ namespace ProjectsGenerator_WindowsForms_2
                     Image img = Image.FromFile(picture.PictureName);
                     picture.PictureWidth = img.Width;
                     picture.PictureHeight = img.Height;
+                    //Copy file to destination
+                    var destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory) + @"Images\UsersImages\" + safeFileName;
+                    File.Copy(fileName, destinationPath, true);
+                    picture.PictureName = destinationPath;
 
                     try
                     {
@@ -162,6 +167,7 @@ namespace ProjectsGenerator_WindowsForms_2
                 {
                     lLoadedImageInfo.Text = "Wybrany plik: " + openFile.SafeFileName;
                     fileName = openFile.FileName;
+                    safeFileName = openFile.SafeFileName;
                 }
             }
         }
