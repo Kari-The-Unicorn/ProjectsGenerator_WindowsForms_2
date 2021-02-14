@@ -1,4 +1,5 @@
 ﻿using ProjectsGenerator_WindowsForms_2.Objects;
+using ProjectsGenerator_WindowsForms_2.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
@@ -131,9 +132,9 @@ namespace ProjectsGenerator_WindowsForms_2
                     }
                     if (!isEditMode)
                     {
+                        var redCircle = Resources.redcircle;
                         imagePos = e.Location;
-                        g.DrawImage(new Bitmap(
-                            @"C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\Images\redcircle.png"),
+                        g.DrawImage(new Bitmap(redCircle),
                          new Point(imagePos.X - 30, imagePos.Y - 30));
                     }
                     pbMap.Image = bmp;
