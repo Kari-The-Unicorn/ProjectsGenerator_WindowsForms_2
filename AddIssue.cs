@@ -127,5 +127,27 @@ namespace ProjectsGenerator_WindowsForms_2
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
         }
+
+        private void AddIssue_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddIssue_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            for (int index = Application.OpenForms.Count - 1; index >= 0; index--)
+            {
+                if (Application.OpenForms[index].Name == "OpenMap")
+                {
+                    Application.OpenForms[index].Hide();
+                }
+
+                else if (Application.OpenForms[index].Name == "AddIssue")
+                {
+                    Application.OpenForms[index].Hide();
+                }
+            }
+            openProject.bShowMap_Click(sender, e);
+        }
     }
 }

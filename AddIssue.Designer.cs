@@ -267,6 +267,8 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Controls.Add(this.pProjectInfoInIssueForm);
             this.Name = "AddIssue";
             this.Text = "AddIssue";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddIssue_FormClosing);
+            this.Load += new System.EventHandler(this.AddIssue_Load);
             this.tlpAddIssueForm.ResumeLayout(false);
             this.tlpAddIssueForm.PerformLayout();
             this.pProjectInfoInIssueForm.ResumeLayout(false);

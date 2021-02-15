@@ -58,8 +58,8 @@ namespace ProjectsGenerator_WindowsForms_2
                     project.ProjectAddress = projectAddress.Trim();
                     project.ProjectCompany = projectCompany.Trim();
                     project.ProjectState = projectState.Trim();
-                    project.ProjectDateIn = projectDateIn;
-                    project.ProjectDateOut = projectDateOut;
+                    project.ProjectDateIn = projectDateIn.ToShortDateString();
+                    project.ProjectDateOut = projectDateOut.ToShortDateString();
                     Image imageContent = new Bitmap(fileName);
                     picture.PictureName = fileName.Trim();
                     //project.ImageId = picture.PictureId;
@@ -70,7 +70,15 @@ namespace ProjectsGenerator_WindowsForms_2
                     picture.PictureHeight = img.Height;
                     //Copy file to destination
                     var destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory) + @"Images\UsersImages\" + safeFileName;
-                    File.Copy(fileName, destinationPath, true);
+                    if (File.Exists(destinationPath))
+                    {
+                        destinationPath = destinationPath
+                            .Replace(".jpg", string.Empty) + "_" + DateTime.Now.ToString()
+                            .Replace("/", string.Empty)
+                            .Replace(":", string.Empty)
+                            .Replace(" ", string.Empty) + ".jpg";
+                    }
+                    File.Copy(fileName, destinationPath, false);
                     picture.PictureName = destinationPath;
 
                     try
@@ -223,6 +231,11 @@ namespace ProjectsGenerator_WindowsForms_2
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset,
             SystemColors.ControlLightLight, 5, ButtonBorderStyle.Outset);
+        }
+
+        private void dtpProjectCollectionDate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

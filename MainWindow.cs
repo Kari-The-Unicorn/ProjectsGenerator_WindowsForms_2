@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ProjectsGenerator_WindowsForms_2.Objects;
@@ -144,8 +145,8 @@ namespace ProjectsGenerator_WindowsForms_2
                         project.ProjectAddress = sqlite_datareader.GetString(2);
                         project.ProjectCompany = sqlite_datareader.GetString(3);
                         project.ProjectState = sqlite_datareader.GetString(4);
-                        project.ProjectDateIn = DateTime.Parse(sqlite_datareader.GetString(5));
-                        project.ProjectDateOut = DateTime.Parse(sqlite_datareader.GetString(6));
+                        project.ProjectDateIn = sqlite_datareader.GetString(5);
+                        project.ProjectDateOut = sqlite_datareader.GetString(6);
                         newMdiChildOpen.tbProjectInfoGeneral.Text = project.ProjectName + "; " +
                                                                     project.ProjectAddress + "; " +
                                                                     project.ProjectCompany + "; " +
@@ -207,13 +208,29 @@ namespace ProjectsGenerator_WindowsForms_2
                     dgvProjects.DataSource = dataTable;
                     
                 }
+                var destinationPath = string.Empty;
+
                 using (SQLiteConnection connection1 = new SQLiteConnection(connectionString))
                 using (SQLiteCommand sqlite_cmd1 = connection1.CreateCommand())
                 {
                     connection1.Open();
+
+                    sqlite_cmd1.CommandText = $"Select * FROM Pictures WHERE PictureId = {project.ImageId}";
+                    SQLiteDataReader sqlite_datareader2 = sqlite_cmd1.ExecuteReader();
+                   
+
+                    if (sqlite_datareader2.Read())
+                    {
+                        destinationPath = sqlite_datareader2.GetString(1);
+                    }
+                    sqlite_datareader2.Close();
+
                     sqlite_cmd1.CommandText = $"DELETE FROM Pictures WHERE PictureId = {project.ImageId}";
                     sqlite_cmd1.ExecuteNonQuery();
                 }
+
+                File.Delete(destinationPath);
+
             }
             catch (Exception ex)
             {

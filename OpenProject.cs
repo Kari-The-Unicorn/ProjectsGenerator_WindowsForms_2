@@ -94,9 +94,34 @@ namespace ProjectsGenerator_WindowsForms_2
                     }
 
                     ((OpenMap)newMdiChildMap).pbMap.Image = Image.FromFile(pictureSrc);
+
                     
-                    ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Normal;
-                    ((OpenMap)newMdiChildMap).Size = new Size(picture.PictureWidth + 10, picture.PictureHeight + 10);
+
+                    int maxWidth = picture.PictureWidth;
+                    int maxHeight = picture.PictureHeight;
+
+                    if (picture.PictureWidth > Screen.PrimaryScreen.Bounds.Width)
+                    {
+                        maxWidth = Screen.PrimaryScreen.Bounds.Width;
+                    }
+               
+                    if (picture.PictureHeight > Screen.PrimaryScreen.Bounds.Height)
+                    {
+                        maxHeight = Screen.PrimaryScreen.Bounds.Height;
+                    }
+
+                    ((OpenMap)newMdiChildMap).Size = new Size(maxWidth + 16, maxHeight + 39);
+
+                    if (picture.PictureWidth > Screen.PrimaryScreen.Bounds.Width && 
+                        picture.PictureHeight > Screen.PrimaryScreen.Bounds.Height)
+                    {
+                        ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Maximized;
+                    }
+                    else
+                    {
+                        ((OpenMap)newMdiChildMap).WindowState = FormWindowState.Normal;
+                    }
+                    
                     newMdiChildMap.ShowDialog();
                     
                 }

@@ -31,7 +31,7 @@ namespace ProjectsGenerator_WindowsForms_2
             {
                 var id = int.Parse(lblId.Text);
 
-                string dbQuery = $@"UPDATE Projects SET ProjectName = '{tbProjectName.Text}', ProjectAddress = '{tbProjectAddress.Text}', ProjectCompany = '{tbProjectCompany.Text}', ProjectState = '{tbProjectState.Text}', ProjectDateIn = '{dtpProjectCollectionDate.Value}', ProjectDateOut = '{dtpProjectCompleteDate.Value}' WHERE id = {id}";
+                string dbQuery = $@"UPDATE Projects SET ProjectName = '{tbProjectName.Text}', ProjectAddress = '{tbProjectAddress.Text}', ProjectCompany = '{tbProjectCompany.Text}', ProjectState = '{tbProjectState.Text}', ProjectDateIn = '{dtpProjectCollectionDate.Value.ToShortDateString()}', ProjectDateOut = '{dtpProjectCompleteDate.Value.ToShortDateString()}' WHERE id = {id}";
 
                 using (SQLiteConnection dbConnection = new SQLiteConnection("Data Source=|DataDirectory|/db/db.db; version=3"))
                 using (SQLiteCommand dbCommand = new SQLiteCommand(dbQuery, dbConnection))

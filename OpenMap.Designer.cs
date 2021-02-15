@@ -35,11 +35,11 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // pbMap
             // 
-            this.pbMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbMap.Location = new System.Drawing.Point(0, 0);
             this.pbMap.Margin = new System.Windows.Forms.Padding(2);
             this.pbMap.Name = "pbMap";
-            this.pbMap.Size = new System.Drawing.Size(676, 555);
+            this.pbMap.Size = new System.Drawing.Size(0, 0);
+            this.pbMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbMap.TabIndex = 0;
             this.pbMap.TabStop = false;
             this.pbMap.Click += new System.EventHandler(this.pbMap_Click);
@@ -47,8 +47,9 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // OpenMap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(676, 555);
             this.Controls.Add(this.pbMap);
             this.Name = "OpenMap";
@@ -57,6 +58,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Load += new System.EventHandler(this.OpenMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMap)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
