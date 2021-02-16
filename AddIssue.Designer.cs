@@ -56,14 +56,14 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.bAddIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bAddIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bAddIssue.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAddIssue.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bAddIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bAddIssue.Location = new System.Drawing.Point(11, 405);
             this.bAddIssue.Margin = new System.Windows.Forms.Padding(2);
             this.bAddIssue.Name = "bAddIssue";
             this.bAddIssue.Size = new System.Drawing.Size(148, 39);
             this.bAddIssue.TabIndex = 5;
-            this.bAddIssue.Text = "Dodaj poprawkę";
+            this.bAddIssue.Text = "Dodaj";
             this.bAddIssue.UseVisualStyleBackColor = false;
             this.bAddIssue.Click += new System.EventHandler(this.bAddIssue_Click);
             this.bAddIssue.Paint += new System.Windows.Forms.PaintEventHandler(this.bAddIssue_Paint);
@@ -75,7 +75,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingIssue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bCancelAddingIssue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bCancelAddingIssue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bCancelAddingIssue.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bCancelAddingIssue.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bCancelAddingIssue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelAddingIssue.Location = new System.Drawing.Point(165, 405);
             this.bCancelAddingIssue.Margin = new System.Windows.Forms.Padding(2);
@@ -108,23 +108,23 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tlpAddIssueForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tlpAddIssueForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tlpAddIssueForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tlpAddIssueForm.Size = new System.Drawing.Size(956, 278);
+            this.tlpAddIssueForm.Size = new System.Drawing.Size(1099, 278);
             this.tlpAddIssueForm.TabIndex = 7;
             // 
             // tbIssuePlace
             // 
-            this.tbIssuePlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIssuePlace.Location = new System.Drawing.Point(141, 186);
+            this.tbIssuePlace.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbIssuePlace.Location = new System.Drawing.Point(161, 186);
             this.tbIssuePlace.Margin = new System.Windows.Forms.Padding(2);
             this.tbIssuePlace.Multiline = true;
             this.tbIssuePlace.Name = "tbIssuePlace";
             this.tbIssuePlace.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIssuePlace.Size = new System.Drawing.Size(812, 37);
+            this.tbIssuePlace.Size = new System.Drawing.Size(650, 30);
             this.tbIssuePlace.TabIndex = 11;
             // 
             // lIssuePlace
             // 
-            this.lIssuePlace.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lIssuePlace.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lIssuePlace.Location = new System.Drawing.Point(2, 184);
             this.lIssuePlace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lIssuePlace.Name = "lIssuePlace";
@@ -135,7 +135,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // lIssueDescription
             // 
-            this.lIssueDescription.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lIssueDescription.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lIssueDescription.Location = new System.Drawing.Point(2, 92);
             this.lIssueDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lIssueDescription.Name = "lIssueDescription";
@@ -146,7 +146,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // lIssueName
             // 
-            this.lIssueName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lIssueName.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lIssueName.Location = new System.Drawing.Point(2, 0);
             this.lIssueName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lIssueName.Name = "lIssueName";
@@ -157,22 +157,22 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbIssueDescription
             // 
-            this.tbIssueDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIssueDescription.Location = new System.Drawing.Point(141, 94);
+            this.tbIssueDescription.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbIssueDescription.Location = new System.Drawing.Point(161, 94);
             this.tbIssueDescription.Margin = new System.Windows.Forms.Padding(2);
             this.tbIssueDescription.Multiline = true;
             this.tbIssueDescription.Name = "tbIssueDescription";
             this.tbIssueDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIssueDescription.Size = new System.Drawing.Size(812, 37);
+            this.tbIssueDescription.Size = new System.Drawing.Size(650, 30);
             this.tbIssueDescription.TabIndex = 10;
             // 
             // tbIssueName
             // 
-            this.tbIssueName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIssueName.Location = new System.Drawing.Point(141, 2);
+            this.tbIssueName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbIssueName.Location = new System.Drawing.Point(161, 2);
             this.tbIssueName.Margin = new System.Windows.Forms.Padding(2);
             this.tbIssueName.Name = "tbIssueName";
-            this.tbIssueName.Size = new System.Drawing.Size(812, 38);
+            this.tbIssueName.Size = new System.Drawing.Size(650, 30);
             this.tbIssueName.TabIndex = 9;
             // 
             // pProjectInfoInIssueForm
@@ -187,72 +187,72 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pProjectInfoInIssueForm.Location = new System.Drawing.Point(11, 11);
             this.pProjectInfoInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.pProjectInfoInIssueForm.Name = "pProjectInfoInIssueForm";
-            this.pProjectInfoInIssueForm.Size = new System.Drawing.Size(953, 73);
+            this.pProjectInfoInIssueForm.Size = new System.Drawing.Size(1095, 73);
             this.pProjectInfoInIssueForm.TabIndex = 8;
             this.pProjectInfoInIssueForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pProjectInfoInIssueForm_Paint);
             // 
             // tbProjectInfoDateOutInIssueForm
             // 
-            this.tbProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(850, 3);
+            this.tbProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(988, 2);
             this.tbProjectInfoDateOutInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateOutInIssueForm.Name = "tbProjectInfoDateOutInIssueForm";
             this.tbProjectInfoDateOutInIssueForm.ReadOnly = true;
-            this.tbProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(97, 29);
+            this.tbProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(101, 31);
             this.tbProjectInfoDateOutInIssueForm.TabIndex = 6;
             // 
             // tbProjectInfoDateInInIssueForm
             // 
-            this.tbProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(714, 2);
+            this.tbProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(838, 2);
             this.tbProjectInfoDateInInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateInInIssueForm.Name = "tbProjectInfoDateInInIssueForm";
             this.tbProjectInfoDateInInIssueForm.ReadOnly = true;
-            this.tbProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(91, 29);
+            this.tbProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(106, 31);
             this.tbProjectInfoDateInInIssueForm.TabIndex = 5;
             // 
             // lProjectInfoDateOutInIssueForm
             // 
             this.lProjectInfoDateOutInIssueForm.AutoSize = true;
-            this.lProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(808, 4);
+            this.lProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(948, 5);
             this.lProjectInfoDateOutInIssueForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateOutInIssueForm.Name = "lProjectInfoDateOutInIssueForm";
-            this.lProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(41, 22);
+            this.lProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(46, 23);
             this.lProjectInfoDateOutInIssueForm.TabIndex = 4;
             this.lProjectInfoDateOutInIssueForm.Text = "Do:";
             // 
             // lProjectInfoDateInInIssueForm
             // 
             this.lProjectInfoDateInInIssueForm.AutoSize = true;
-            this.lProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(670, 4);
+            this.lProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(798, 5);
             this.lProjectInfoDateInInIssueForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateInInIssueForm.Name = "lProjectInfoDateInInIssueForm";
-            this.lProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(45, 22);
+            this.lProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(46, 23);
             this.lProjectInfoDateInInIssueForm.TabIndex = 3;
             this.lProjectInfoDateInInIssueForm.Text = "Od:";
             // 
             // tbProjectInfoGeneralInIssueForm
             // 
-            this.tbProjectInfoGeneralInIssueForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProjectInfoGeneralInIssueForm.Location = new System.Drawing.Point(72, 6);
+            this.tbProjectInfoGeneralInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoGeneralInIssueForm.Location = new System.Drawing.Point(82, 2);
             this.tbProjectInfoGeneralInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoGeneralInIssueForm.Multiline = true;
             this.tbProjectInfoGeneralInIssueForm.Name = "tbProjectInfoGeneralInIssueForm";
             this.tbProjectInfoGeneralInIssueForm.ReadOnly = true;
             this.tbProjectInfoGeneralInIssueForm.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectInfoGeneralInIssueForm.Size = new System.Drawing.Size(595, 26);
+            this.tbProjectInfoGeneralInIssueForm.Size = new System.Drawing.Size(712, 54);
             this.tbProjectInfoGeneralInIssueForm.TabIndex = 2;
             // 
             // lProjectInfoInIssueForm
             // 
             this.lProjectInfoInIssueForm.AutoSize = true;
-            this.lProjectInfoInIssueForm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lProjectInfoInIssueForm.Location = new System.Drawing.Point(2, 6);
+            this.lProjectInfoInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lProjectInfoInIssueForm.Location = new System.Drawing.Point(2, 2);
             this.lProjectInfoInIssueForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoInIssueForm.Name = "lProjectInfoInIssueForm";
-            this.lProjectInfoInIssueForm.Size = new System.Drawing.Size(76, 22);
+            this.lProjectInfoInIssueForm.Size = new System.Drawing.Size(86, 23);
             this.lProjectInfoInIssueForm.TabIndex = 1;
             this.lProjectInfoInIssueForm.Text = "Projekt:";
             // 
@@ -260,7 +260,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 499);
+            this.ClientSize = new System.Drawing.Size(1117, 499);
             this.Controls.Add(this.bAddIssue);
             this.Controls.Add(this.bCancelAddingIssue);
             this.Controls.Add(this.tlpAddIssueForm);

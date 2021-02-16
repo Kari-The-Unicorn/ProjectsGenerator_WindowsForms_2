@@ -72,7 +72,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tableLayoutPanel1.Controls.Add(this.projectCollectionDateLabel, 0, 5);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tableLayoutPanel1.RowCount = 8;
@@ -84,47 +84,49 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.28774F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.98789F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.266402F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 537);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(714, 436);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // lUploadImage
             // 
             this.lUploadImage.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lUploadImage.Location = new System.Drawing.Point(3, 399);
+            this.lUploadImage.Location = new System.Drawing.Point(2, 322);
+            this.lUploadImage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lUploadImage.Name = "lUploadImage";
-            this.lUploadImage.Size = new System.Drawing.Size(191, 92);
+            this.lUploadImage.Size = new System.Drawing.Size(143, 75);
             this.lUploadImage.TabIndex = 17;
             this.lUploadImage.Text = "Załącznik";
             this.lUploadImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbProjectState
             // 
-            this.tbProjectState.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectState.Location = new System.Drawing.Point(201, 201);
-            this.tbProjectState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProjectState.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectState.Location = new System.Drawing.Point(150, 163);
+            this.tbProjectState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbProjectState.Multiline = true;
             this.tbProjectState.Name = "tbProjectState";
             this.tbProjectState.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectState.Size = new System.Drawing.Size(739, 45);
+            this.tbProjectState.Size = new System.Drawing.Size(444, 30);
             this.tbProjectState.TabIndex = 12;
             // 
             // tbProjectCompany
             // 
-            this.tbProjectCompany.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectCompany.Location = new System.Drawing.Point(201, 134);
-            this.tbProjectCompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProjectCompany.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectCompany.Location = new System.Drawing.Point(150, 109);
+            this.tbProjectCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbProjectCompany.Multiline = true;
             this.tbProjectCompany.Name = "tbProjectCompany";
             this.tbProjectCompany.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectCompany.Size = new System.Drawing.Size(739, 45);
+            this.tbProjectCompany.Size = new System.Drawing.Size(444, 30);
             this.tbProjectCompany.TabIndex = 11;
             // 
             // projectStateLabel
             // 
             this.projectStateLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectStateLabel.Location = new System.Drawing.Point(3, 199);
+            this.projectStateLabel.Location = new System.Drawing.Point(2, 161);
+            this.projectStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectStateLabel.Name = "projectStateLabel";
-            this.projectStateLabel.Size = new System.Drawing.Size(191, 48);
+            this.projectStateLabel.Size = new System.Drawing.Size(143, 39);
             this.projectStateLabel.TabIndex = 6;
             this.projectStateLabel.Text = "Status";
             this.projectStateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,9 +134,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // projectCompanyLabel
             // 
             this.projectCompanyLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectCompanyLabel.Location = new System.Drawing.Point(3, 132);
+            this.projectCompanyLabel.Location = new System.Drawing.Point(2, 107);
+            this.projectCompanyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCompanyLabel.Name = "projectCompanyLabel";
-            this.projectCompanyLabel.Size = new System.Drawing.Size(191, 48);
+            this.projectCompanyLabel.Size = new System.Drawing.Size(143, 39);
             this.projectCompanyLabel.TabIndex = 4;
             this.projectCompanyLabel.Text = "Firma";
             this.projectCompanyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,9 +145,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // projectAddressLabel
             // 
             this.projectAddressLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectAddressLabel.Location = new System.Drawing.Point(3, 65);
+            this.projectAddressLabel.Location = new System.Drawing.Point(2, 53);
+            this.projectAddressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectAddressLabel.Name = "projectAddressLabel";
-            this.projectAddressLabel.Size = new System.Drawing.Size(191, 48);
+            this.projectAddressLabel.Size = new System.Drawing.Size(143, 39);
             this.projectAddressLabel.TabIndex = 2;
             this.projectAddressLabel.Text = "Adres";
             this.projectAddressLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,31 +156,32 @@ namespace ProjectsGenerator_WindowsForms_2
             // projectNameLabel
             // 
             this.projectNameLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectNameLabel.Location = new System.Drawing.Point(3, 0);
+            this.projectNameLabel.Location = new System.Drawing.Point(2, 0);
+            this.projectNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectNameLabel.Name = "projectNameLabel";
-            this.projectNameLabel.Size = new System.Drawing.Size(191, 48);
+            this.projectNameLabel.Size = new System.Drawing.Size(143, 39);
             this.projectNameLabel.TabIndex = 0;
             this.projectNameLabel.Text = "Nazwa projektu";
             this.projectNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbProjectAddress
             // 
-            this.tbProjectAddress.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectAddress.Location = new System.Drawing.Point(201, 67);
-            this.tbProjectAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProjectAddress.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectAddress.Location = new System.Drawing.Point(150, 55);
+            this.tbProjectAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbProjectAddress.Multiline = true;
             this.tbProjectAddress.Name = "tbProjectAddress";
             this.tbProjectAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectAddress.Size = new System.Drawing.Size(739, 45);
+            this.tbProjectAddress.Size = new System.Drawing.Size(444, 30);
             this.tbProjectAddress.TabIndex = 10;
             // 
             // tbProjectName
             // 
-            this.tbProjectName.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectName.Location = new System.Drawing.Point(201, 2);
-            this.tbProjectName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProjectName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectName.Location = new System.Drawing.Point(150, 2);
+            this.tbProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbProjectName.Name = "tbProjectName";
-            this.tbProjectName.Size = new System.Drawing.Size(739, 48);
+            this.tbProjectName.Size = new System.Drawing.Size(444, 30);
             this.tbProjectName.TabIndex = 9;
             // 
             // dtpProjectCollectionDate
@@ -184,10 +189,10 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dtpProjectCollectionDate.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtpProjectCollectionDate.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCollectionDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpProjectCollectionDate.Location = new System.Drawing.Point(201, 268);
-            this.dtpProjectCollectionDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpProjectCollectionDate.Location = new System.Drawing.Point(150, 217);
+            this.dtpProjectCollectionDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpProjectCollectionDate.Name = "dtpProjectCollectionDate";
-            this.dtpProjectCollectionDate.Size = new System.Drawing.Size(273, 35);
+            this.dtpProjectCollectionDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCollectionDate.TabIndex = 15;
             this.dtpProjectCollectionDate.Value = new System.DateTime(2020, 11, 29, 21, 23, 3, 0);
             this.dtpProjectCollectionDate.ValueChanged += new System.EventHandler(this.dtpProjectCollectionDate_ValueChanged);
@@ -196,10 +201,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.dtpProjectCompleteDate.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCompleteDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpProjectCompleteDate.Location = new System.Drawing.Point(201, 335);
-            this.dtpProjectCompleteDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpProjectCompleteDate.Location = new System.Drawing.Point(150, 271);
+            this.dtpProjectCompleteDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpProjectCompleteDate.Name = "dtpProjectCompleteDate";
-            this.dtpProjectCompleteDate.Size = new System.Drawing.Size(273, 35);
+            this.dtpProjectCompleteDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCompleteDate.TabIndex = 16;
             // 
             // bUploadImage
@@ -210,10 +215,10 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bUploadImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bUploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bUploadImage.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.bUploadImage.Location = new System.Drawing.Point(201, 401);
-            this.bUploadImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bUploadImage.Location = new System.Drawing.Point(150, 324);
+            this.bUploadImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bUploadImage.Name = "bUploadImage";
-            this.bUploadImage.Size = new System.Drawing.Size(181, 50);
+            this.bUploadImage.Size = new System.Drawing.Size(136, 41);
             this.bUploadImage.TabIndex = 18;
             this.bUploadImage.Text = "Załaduj mapę";
             this.bUploadImage.UseVisualStyleBackColor = false;
@@ -223,9 +228,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // lLoadedImageInfo
             // 
             this.lLoadedImageInfo.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lLoadedImageInfo.Location = new System.Drawing.Point(201, 495);
+            this.lLoadedImageInfo.Location = new System.Drawing.Point(150, 400);
+            this.lLoadedImageInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lLoadedImageInfo.Name = "lLoadedImageInfo";
-            this.lLoadedImageInfo.Size = new System.Drawing.Size(507, 39);
+            this.lLoadedImageInfo.Size = new System.Drawing.Size(380, 32);
             this.lLoadedImageInfo.TabIndex = 19;
             this.lLoadedImageInfo.Text = "Wybierz plik .jpg";
             this.lLoadedImageInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -233,9 +239,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // projectCompleteDateLabel
             // 
             this.projectCompleteDateLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectCompleteDateLabel.Location = new System.Drawing.Point(3, 266);
+            this.projectCompleteDateLabel.Location = new System.Drawing.Point(2, 215);
+            this.projectCompleteDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCompleteDateLabel.Name = "projectCompleteDateLabel";
-            this.projectCompleteDateLabel.Size = new System.Drawing.Size(191, 41);
+            this.projectCompleteDateLabel.Size = new System.Drawing.Size(143, 33);
             this.projectCompleteDateLabel.TabIndex = 8;
             this.projectCompleteDateLabel.Text = "Data rozpoczęcia";
             this.projectCompleteDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -243,9 +250,10 @@ namespace ProjectsGenerator_WindowsForms_2
             // projectCollectionDateLabel
             // 
             this.projectCollectionDateLabel.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.projectCollectionDateLabel.Location = new System.Drawing.Point(3, 333);
+            this.projectCollectionDateLabel.Location = new System.Drawing.Point(2, 269);
+            this.projectCollectionDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCollectionDateLabel.Name = "projectCollectionDateLabel";
-            this.projectCollectionDateLabel.Size = new System.Drawing.Size(191, 49);
+            this.projectCollectionDateLabel.Size = new System.Drawing.Size(143, 40);
             this.projectCollectionDateLabel.TabIndex = 7;
             this.projectCollectionDateLabel.Text = "Data oddania";
             this.projectCollectionDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,10 +268,10 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCancelAddingProject.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bCancelAddingProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bCancelAddingProject.Location = new System.Drawing.Point(201, 553);
-            this.bCancelAddingProject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bCancelAddingProject.Location = new System.Drawing.Point(151, 449);
+            this.bCancelAddingProject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bCancelAddingProject.Name = "bCancelAddingProject";
-            this.bCancelAddingProject.Size = new System.Drawing.Size(203, 48);
+            this.bCancelAddingProject.Size = new System.Drawing.Size(152, 39);
             this.bCancelAddingProject.TabIndex = 6;
             this.bCancelAddingProject.Text = "Anuluj";
             this.bCancelAddingProject.UseVisualStyleBackColor = false;
@@ -280,10 +288,10 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAddProject.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bAddProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bAddProject.Location = new System.Drawing.Point(1, 553);
-            this.bAddProject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bAddProject.Location = new System.Drawing.Point(1, 449);
+            this.bAddProject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bAddProject.Name = "bAddProject";
-            this.bAddProject.Size = new System.Drawing.Size(197, 48);
+            this.bAddProject.Size = new System.Drawing.Size(148, 39);
             this.bAddProject.TabIndex = 7;
             this.bAddProject.Text = "Dodaj projekt";
             this.bAddProject.UseVisualStyleBackColor = false;
@@ -292,13 +300,12 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // AddProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 614);
+            this.ClientSize = new System.Drawing.Size(714, 499);
             this.Controls.Add(this.bAddProject);
             this.Controls.Add(this.bCancelAddingProject);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddProject";
             this.Text = "Dodaj projekt";
             this.tableLayoutPanel1.ResumeLayout(false);

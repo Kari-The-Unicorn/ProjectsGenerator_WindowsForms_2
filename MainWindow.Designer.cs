@@ -29,9 +29,9 @@ namespace ProjectsGenerator_WindowsForms_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pSideMenu = new System.Windows.Forms.Panel();
             this.bDeleteProject = new FontAwesome.Sharp.IconButton();
             this.bEditProject = new FontAwesome.Sharp.IconButton();
@@ -54,9 +54,8 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pSideMenu.Controls.Add(this.pLogo);
             this.pSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pSideMenu.Location = new System.Drawing.Point(0, 0);
-            this.pSideMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pSideMenu.Name = "pSideMenu";
-            this.pSideMenu.Size = new System.Drawing.Size(191, 661);
+            this.pSideMenu.Size = new System.Drawing.Size(143, 537);
             this.pSideMenu.TabIndex = 2;
             this.pSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pSideMenu_Paint);
             // 
@@ -73,10 +72,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bDeleteProject.IconColor = System.Drawing.Color.Black;
             this.bDeleteProject.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bDeleteProject.IconSize = 29;
-            this.bDeleteProject.Location = new System.Drawing.Point(0, 264);
-            this.bDeleteProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bDeleteProject.Location = new System.Drawing.Point(0, 215);
             this.bDeleteProject.Name = "bDeleteProject";
-            this.bDeleteProject.Size = new System.Drawing.Size(191, 58);
+            this.bDeleteProject.Size = new System.Drawing.Size(143, 47);
             this.bDeleteProject.TabIndex = 11;
             this.bDeleteProject.Text = "Usuń";
             this.bDeleteProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -98,10 +96,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bEditProject.IconColor = System.Drawing.Color.Black;
             this.bEditProject.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bEditProject.IconSize = 29;
-            this.bEditProject.Location = new System.Drawing.Point(0, 206);
-            this.bEditProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEditProject.Location = new System.Drawing.Point(0, 168);
             this.bEditProject.Name = "bEditProject";
-            this.bEditProject.Size = new System.Drawing.Size(191, 58);
+            this.bEditProject.Size = new System.Drawing.Size(143, 47);
             this.bEditProject.TabIndex = 10;
             this.bEditProject.Text = "Edytuj";
             this.bEditProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -123,10 +120,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bOpenProject.IconColor = System.Drawing.Color.Black;
             this.bOpenProject.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bOpenProject.IconSize = 29;
-            this.bOpenProject.Location = new System.Drawing.Point(0, 148);
-            this.bOpenProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOpenProject.Location = new System.Drawing.Point(0, 121);
             this.bOpenProject.Name = "bOpenProject";
-            this.bOpenProject.Size = new System.Drawing.Size(191, 58);
+            this.bOpenProject.Size = new System.Drawing.Size(143, 47);
             this.bOpenProject.TabIndex = 9;
             this.bOpenProject.Text = "Otwórz";
             this.bOpenProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -149,10 +145,9 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bNewProject.IconColor = System.Drawing.Color.Black;
             this.bNewProject.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bNewProject.IconSize = 29;
-            this.bNewProject.Location = new System.Drawing.Point(0, 90);
-            this.bNewProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bNewProject.Location = new System.Drawing.Point(0, 74);
             this.bNewProject.Name = "bNewProject";
-            this.bNewProject.Size = new System.Drawing.Size(191, 58);
+            this.bNewProject.Size = new System.Drawing.Size(143, 47);
             this.bNewProject.TabIndex = 7;
             this.bNewProject.Text = "Dodaj";
             this.bNewProject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,9 +163,8 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pLogo.Location = new System.Drawing.Point(0, 0);
-            this.pLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pLogo.Name = "pLogo";
-            this.pLogo.Size = new System.Drawing.Size(191, 90);
+            this.pLogo.Size = new System.Drawing.Size(143, 74);
             this.pLogo.TabIndex = 0;
             this.pLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pLogo_Paint);
             // 
@@ -181,32 +175,32 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvProjects.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProjects.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvProjects.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjects.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle17;
-            this.dgvProjects.Location = new System.Drawing.Point(196, 31);
-            this.dgvProjects.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvProjects.Location = new System.Drawing.Point(147, 25);
+            this.dgvProjects.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dgvProjects.Name = "dgvProjects";
             this.dgvProjects.RowHeadersWidth = 51;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjects.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjects.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProjects.Size = new System.Drawing.Size(1248, 631);
+            this.dgvProjects.Size = new System.Drawing.Size(936, 513);
             this.dgvProjects.TabIndex = 0;
             this.dgvProjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjects_CellContentClick);
             // 
@@ -216,11 +210,10 @@ namespace ProjectsGenerator_WindowsForms_2
             this.lInfoProjects.BackColor = System.Drawing.Color.LemonChiffon;
             this.lInfoProjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.lInfoProjects.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lInfoProjects.Location = new System.Drawing.Point(191, 0);
-            this.lInfoProjects.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lInfoProjects.Location = new System.Drawing.Point(143, 0);
             this.lInfoProjects.Name = "lInfoProjects";
             this.lInfoProjects.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lInfoProjects.Size = new System.Drawing.Size(1001, 29);
+            this.lInfoProjects.Size = new System.Drawing.Size(809, 23);
             this.lInfoProjects.TabIndex = 4;
             this.lInfoProjects.Text = "Lista projektów (wybierz z listy poprzez zaznaczenie całego wiersza na niebiesko)" +
     ":";
@@ -228,15 +221,14 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1444, 661);
+            this.ClientSize = new System.Drawing.Size(1083, 537);
             this.Controls.Add(this.dgvProjects);
             this.Controls.Add(this.lInfoProjects);
             this.Controls.Add(this.pSideMenu);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Konstruktor";
