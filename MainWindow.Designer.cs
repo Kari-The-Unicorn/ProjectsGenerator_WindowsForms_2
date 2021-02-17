@@ -177,7 +177,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvProjects.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -194,7 +194,7 @@ namespace ProjectsGenerator_WindowsForms_2
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProjects.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProjects.Location = new System.Drawing.Point(147, 25);
-            this.dgvProjects.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dgvProjects.Margin = new System.Windows.Forms.Padding(5);
             this.dgvProjects.Name = "dgvProjects";
             this.dgvProjects.RowHeadersWidth = 51;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;

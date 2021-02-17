@@ -119,7 +119,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tbIssuePlace.Multiline = true;
             this.tbIssuePlace.Name = "tbIssuePlace";
             this.tbIssuePlace.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIssuePlace.Size = new System.Drawing.Size(650, 30);
+            this.tbIssuePlace.Size = new System.Drawing.Size(650, 37);
             this.tbIssuePlace.TabIndex = 11;
             // 
             // lIssuePlace
@@ -163,7 +163,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tbIssueDescription.Multiline = true;
             this.tbIssueDescription.Name = "tbIssueDescription";
             this.tbIssueDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIssueDescription.Size = new System.Drawing.Size(650, 30);
+            this.tbIssueDescription.Size = new System.Drawing.Size(650, 37);
             this.tbIssueDescription.TabIndex = 10;
             // 
             // tbIssueName
@@ -172,7 +172,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tbIssueName.Location = new System.Drawing.Point(161, 2);
             this.tbIssueName.Margin = new System.Windows.Forms.Padding(2);
             this.tbIssueName.Name = "tbIssueName";
-            this.tbIssueName.Size = new System.Drawing.Size(650, 30);
+            this.tbIssueName.Size = new System.Drawing.Size(650, 37);
             this.tbIssueName.TabIndex = 9;
             // 
             // pProjectInfoInIssueForm
@@ -266,7 +266,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Controls.Add(this.tlpAddIssueForm);
             this.Controls.Add(this.pProjectInfoInIssueForm);
             this.Name = "AddIssue";
-            this.Text = "AddIssue";
+            this.Text = "Dodaj poprawkę";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddIssue_FormClosing);
             this.Load += new System.EventHandler(this.AddIssue_Load);
             this.tlpAddIssueForm.ResumeLayout(false);

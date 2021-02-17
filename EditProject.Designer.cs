@@ -83,7 +83,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbProjectState
             // 
-            this.tbProjectState.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProjectState.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectState.Location = new System.Drawing.Point(149, 206);
             this.tbProjectState.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectState.Multiline = true;
@@ -94,7 +94,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbProjectCompany
             // 
-            this.tbProjectCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProjectCompany.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectCompany.Location = new System.Drawing.Point(149, 138);
             this.tbProjectCompany.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectCompany.Multiline = true;
@@ -105,7 +105,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectStateLabel
             // 
-            this.projectStateLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectStateLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectStateLabel.Location = new System.Drawing.Point(2, 204);
             this.projectStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectStateLabel.Name = "projectStateLabel";
@@ -116,7 +116,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectCompanyLabel
             // 
-            this.projectCompanyLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectCompanyLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectCompanyLabel.Location = new System.Drawing.Point(2, 136);
             this.projectCompanyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCompanyLabel.Name = "projectCompanyLabel";
@@ -127,7 +127,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectAddressLabel
             // 
-            this.projectAddressLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectAddressLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectAddressLabel.Location = new System.Drawing.Point(2, 68);
             this.projectAddressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectAddressLabel.Name = "projectAddressLabel";
@@ -138,7 +138,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectNameLabel
             // 
-            this.projectNameLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectNameLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectNameLabel.Location = new System.Drawing.Point(2, 0);
             this.projectNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectNameLabel.Name = "projectNameLabel";
@@ -149,7 +149,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectCollectionDateLabel
             // 
-            this.projectCollectionDateLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectCollectionDateLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectCollectionDateLabel.Location = new System.Drawing.Point(2, 272);
             this.projectCollectionDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCollectionDateLabel.Name = "projectCollectionDateLabel";
@@ -160,7 +160,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // projectCompleteDateLabel
             // 
-            this.projectCompleteDateLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectCompleteDateLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.projectCompleteDateLabel.Location = new System.Drawing.Point(2, 340);
             this.projectCompleteDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.projectCompleteDateLabel.Name = "projectCompleteDateLabel";
@@ -171,7 +171,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbProjectAddress
             // 
-            this.tbProjectAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProjectAddress.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectAddress.Location = new System.Drawing.Point(149, 70);
             this.tbProjectAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectAddress.Multiline = true;
@@ -182,34 +182,34 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbProjectName
             // 
-            this.tbProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProjectName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectName.Location = new System.Drawing.Point(149, 2);
             this.tbProjectName.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectName.Name = "tbProjectName";
-            this.tbProjectName.Size = new System.Drawing.Size(555, 38);
+            this.tbProjectName.Size = new System.Drawing.Size(555, 37);
             this.tbProjectName.TabIndex = 9;
             // 
             // dtpProjectCollectionDate
             // 
             this.dtpProjectCollectionDate.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dtpProjectCollectionDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpProjectCollectionDate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCollectionDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpProjectCollectionDate.Location = new System.Drawing.Point(149, 274);
             this.dtpProjectCollectionDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpProjectCollectionDate.Name = "dtpProjectCollectionDate";
-            this.dtpProjectCollectionDate.Size = new System.Drawing.Size(206, 26);
+            this.dtpProjectCollectionDate.Size = new System.Drawing.Size(206, 31);
             this.dtpProjectCollectionDate.TabIndex = 15;
             this.dtpProjectCollectionDate.Value = new System.DateTime(2020, 11, 29, 21, 23, 3, 0);
             // 
             // dtpProjectCompleteDate
             // 
             this.dtpProjectCompleteDate.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dtpProjectCompleteDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpProjectCompleteDate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCompleteDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpProjectCompleteDate.Location = new System.Drawing.Point(149, 342);
             this.dtpProjectCompleteDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpProjectCompleteDate.Name = "dtpProjectCompleteDate";
-            this.dtpProjectCompleteDate.Size = new System.Drawing.Size(206, 26);
+            this.dtpProjectCompleteDate.Size = new System.Drawing.Size(206, 31);
             this.dtpProjectCompleteDate.TabIndex = 16;
             // 
             // lblId
@@ -229,7 +229,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelEditingProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.bCancelEditingProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bCancelEditingProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bCancelEditingProject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bCancelEditingProject.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bCancelEditingProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelEditingProject.Location = new System.Drawing.Point(164, 452);
             this.bCancelEditingProject.Margin = new System.Windows.Forms.Padding(2);
@@ -249,7 +249,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bEditProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.bEditProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bEditProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bEditProject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bEditProject.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bEditProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bEditProject.Location = new System.Drawing.Point(11, 452);
             this.bEditProject.Margin = new System.Windows.Forms.Padding(2);

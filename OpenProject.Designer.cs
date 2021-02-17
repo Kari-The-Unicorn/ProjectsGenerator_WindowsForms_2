@@ -29,7 +29,8 @@ namespace ProjectsGenerator_WindowsForms_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pProjectInfo = new System.Windows.Forms.Panel();
             this.tbProjectInfoDateOut = new System.Windows.Forms.TextBox();
             this.tbProjectInfoDateIn = new System.Windows.Forms.TextBox();
@@ -58,73 +59,73 @@ namespace ProjectsGenerator_WindowsForms_2
             this.pProjectInfo.Location = new System.Drawing.Point(2, 3);
             this.pProjectInfo.Margin = new System.Windows.Forms.Padding(2);
             this.pProjectInfo.Name = "pProjectInfo";
-            this.pProjectInfo.Size = new System.Drawing.Size(1092, 50);
+            this.pProjectInfo.Size = new System.Drawing.Size(1226, 50);
             this.pProjectInfo.TabIndex = 6;
             this.pProjectInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.pProjectInfo_Paint);
             // 
             // tbProjectInfoDateOut
             // 
-            this.tbProjectInfoDateOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProjectInfoDateOut.Location = new System.Drawing.Point(939, 0);
+            this.tbProjectInfoDateOut.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoDateOut.Location = new System.Drawing.Point(1118, 2);
             this.tbProjectInfoDateOut.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateOut.Name = "tbProjectInfoDateOut";
             this.tbProjectInfoDateOut.ReadOnly = true;
-            this.tbProjectInfoDateOut.Size = new System.Drawing.Size(143, 26);
+            this.tbProjectInfoDateOut.Size = new System.Drawing.Size(102, 27);
             this.tbProjectInfoDateOut.TabIndex = 6;
             // 
             // tbProjectInfoDateIn
             // 
-            this.tbProjectInfoDateIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProjectInfoDateIn.Location = new System.Drawing.Point(757, 1);
+            this.tbProjectInfoDateIn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoDateIn.Location = new System.Drawing.Point(962, 3);
             this.tbProjectInfoDateIn.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateIn.Name = "tbProjectInfoDateIn";
             this.tbProjectInfoDateIn.ReadOnly = true;
-            this.tbProjectInfoDateIn.Size = new System.Drawing.Size(144, 26);
+            this.tbProjectInfoDateIn.Size = new System.Drawing.Size(102, 27);
             this.tbProjectInfoDateIn.TabIndex = 5;
             // 
             // lProjectInfoDateOut
             // 
             this.lProjectInfoDateOut.AutoSize = true;
-            this.lProjectInfoDateOut.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lProjectInfoDateOut.Location = new System.Drawing.Point(904, 4);
+            this.lProjectInfoDateOut.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lProjectInfoDateOut.Location = new System.Drawing.Point(1068, 4);
             this.lProjectInfoDateOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateOut.Name = "lProjectInfoDateOut";
-            this.lProjectInfoDateOut.Size = new System.Drawing.Size(41, 22);
+            this.lProjectInfoDateOut.Size = new System.Drawing.Size(46, 23);
             this.lProjectInfoDateOut.TabIndex = 4;
             this.lProjectInfoDateOut.Text = "Do:";
             // 
             // lProjectInfoDateIn
             // 
             this.lProjectInfoDateIn.AutoSize = true;
-            this.lProjectInfoDateIn.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lProjectInfoDateIn.Location = new System.Drawing.Point(718, 5);
+            this.lProjectInfoDateIn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lProjectInfoDateIn.Location = new System.Drawing.Point(912, 5);
             this.lProjectInfoDateIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateIn.Name = "lProjectInfoDateIn";
-            this.lProjectInfoDateIn.Size = new System.Drawing.Size(45, 22);
+            this.lProjectInfoDateIn.Size = new System.Drawing.Size(46, 23);
             this.lProjectInfoDateIn.TabIndex = 3;
             this.lProjectInfoDateIn.Text = "Od:";
             // 
             // tbProjectInfoGeneral
             // 
-            this.tbProjectInfoGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.tbProjectInfoGeneral.Location = new System.Drawing.Point(71, 2);
+            this.tbProjectInfoGeneral.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.tbProjectInfoGeneral.Location = new System.Drawing.Point(86, 2);
             this.tbProjectInfoGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoGeneral.Multiline = true;
             this.tbProjectInfoGeneral.Name = "tbProjectInfoGeneral";
             this.tbProjectInfoGeneral.ReadOnly = true;
             this.tbProjectInfoGeneral.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectInfoGeneral.Size = new System.Drawing.Size(644, 32);
+            this.tbProjectInfoGeneral.Size = new System.Drawing.Size(822, 37);
             this.tbProjectInfoGeneral.TabIndex = 2;
             this.tbProjectInfoGeneral.TextChanged += new System.EventHandler(this.tbProjectInfoGeneral_TextChanged);
             // 
             // lProjectInfo
             // 
             this.lProjectInfo.AutoSize = true;
-            this.lProjectInfo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lProjectInfo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lProjectInfo.Location = new System.Drawing.Point(2, 6);
             this.lProjectInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfo.Name = "lProjectInfo";
-            this.lProjectInfo.Size = new System.Drawing.Size(76, 22);
+            this.lProjectInfo.Size = new System.Drawing.Size(86, 23);
             this.lProjectInfo.TabIndex = 1;
             this.lProjectInfo.Text = "Projekt:";
             // 
@@ -142,7 +143,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bShowMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.bShowMap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.bShowMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bShowMap.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bShowMap.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bShowMap.Location = new System.Drawing.Point(922, 58);
             this.bShowMap.Margin = new System.Windows.Forms.Padding(2);
             this.bShowMap.Name = "bShowMap";
@@ -159,7 +160,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bLoadIssues.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bLoadIssues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bLoadIssues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bLoadIssues.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bLoadIssues.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bLoadIssues.Location = new System.Drawing.Point(256, 57);
             this.bLoadIssues.Margin = new System.Windows.Forms.Padding(2);
             this.bLoadIssues.Name = "bLoadIssues";
@@ -173,13 +174,13 @@ namespace ProjectsGenerator_WindowsForms_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(11, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 22);
+            this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Lista poprawek:";
+            this.label1.Text = "Lista poprawek";
             // 
             // dgvIssues
             // 
@@ -193,15 +194,24 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dgvIssues.Location = new System.Drawing.Point(2, 104);
             this.dgvIssues.Margin = new System.Windows.Forms.Padding(2);
             this.dgvIssues.Name = "dgvIssues";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIssues.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvIssues.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIssues.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvIssues.RowTemplate.Height = 24;
             this.dgvIssues.RowTemplate.ReadOnly = true;
             this.dgvIssues.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvIssues.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvIssues.Size = new System.Drawing.Size(1090, 482);
+            this.dgvIssues.Size = new System.Drawing.Size(1226, 482);
             this.dgvIssues.TabIndex = 7;
             this.dgvIssues.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIssues_CellContentClick);
             // 
@@ -209,7 +219,7 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 597);
+            this.ClientSize = new System.Drawing.Size(1229, 597);
             this.Controls.Add(this.pProjectInfo);
             this.Controls.Add(this.lId);
             this.Controls.Add(this.bShowMap);
@@ -217,7 +227,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvIssues);
             this.Name = "OpenProject";
-            this.Text = "OpenProject";
+            this.Text = "Mój projekt";
             this.Load += new System.EventHandler(this.OpenProject_Load);
             this.pProjectInfo.ResumeLayout(false);
             this.pProjectInfo.PerformLayout();

@@ -168,5 +168,15 @@ namespace ProjectsGenerator_WindowsForms_2
         {
 
         }
+
+        private void tbProjectInfoDateOutInIssueForm_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void lProjectInfoDateInInIssueForm_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

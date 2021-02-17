@@ -72,7 +72,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tableLayoutPanel1.Controls.Add(this.projectCollectionDateLabel, 0, 5);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tableLayoutPanel1.RowCount = 8;
@@ -102,22 +102,22 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.tbProjectState.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectState.Location = new System.Drawing.Point(150, 163);
-            this.tbProjectState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProjectState.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectState.Multiline = true;
             this.tbProjectState.Name = "tbProjectState";
             this.tbProjectState.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectState.Size = new System.Drawing.Size(444, 30);
+            this.tbProjectState.Size = new System.Drawing.Size(444, 37);
             this.tbProjectState.TabIndex = 12;
             // 
             // tbProjectCompany
             // 
             this.tbProjectCompany.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectCompany.Location = new System.Drawing.Point(150, 109);
-            this.tbProjectCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProjectCompany.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectCompany.Multiline = true;
             this.tbProjectCompany.Name = "tbProjectCompany";
             this.tbProjectCompany.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectCompany.Size = new System.Drawing.Size(444, 30);
+            this.tbProjectCompany.Size = new System.Drawing.Size(444, 37);
             this.tbProjectCompany.TabIndex = 11;
             // 
             // projectStateLabel
@@ -166,22 +166,23 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             // tbProjectAddress
             // 
+            this.tbProjectAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbProjectAddress.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectAddress.Location = new System.Drawing.Point(150, 55);
-            this.tbProjectAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProjectAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectAddress.Multiline = true;
             this.tbProjectAddress.Name = "tbProjectAddress";
             this.tbProjectAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectAddress.Size = new System.Drawing.Size(444, 30);
+            this.tbProjectAddress.Size = new System.Drawing.Size(444, 37);
             this.tbProjectAddress.TabIndex = 10;
             // 
             // tbProjectName
             // 
             this.tbProjectName.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.tbProjectName.Location = new System.Drawing.Point(150, 2);
-            this.tbProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProjectName.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectName.Name = "tbProjectName";
-            this.tbProjectName.Size = new System.Drawing.Size(444, 30);
+            this.tbProjectName.Size = new System.Drawing.Size(444, 37);
             this.tbProjectName.TabIndex = 9;
             // 
             // dtpProjectCollectionDate
@@ -190,7 +191,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dtpProjectCollectionDate.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCollectionDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpProjectCollectionDate.Location = new System.Drawing.Point(150, 217);
-            this.dtpProjectCollectionDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpProjectCollectionDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpProjectCollectionDate.Name = "dtpProjectCollectionDate";
             this.dtpProjectCollectionDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCollectionDate.TabIndex = 15;
@@ -202,7 +203,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dtpProjectCompleteDate.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.dtpProjectCompleteDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpProjectCompleteDate.Location = new System.Drawing.Point(150, 271);
-            this.dtpProjectCompleteDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpProjectCompleteDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpProjectCompleteDate.Name = "dtpProjectCompleteDate";
             this.dtpProjectCompleteDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCompleteDate.TabIndex = 16;
@@ -216,7 +217,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bUploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bUploadImage.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bUploadImage.Location = new System.Drawing.Point(150, 324);
-            this.bUploadImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bUploadImage.Margin = new System.Windows.Forms.Padding(2);
             this.bUploadImage.Name = "bUploadImage";
             this.bUploadImage.Size = new System.Drawing.Size(136, 41);
             this.bUploadImage.TabIndex = 18;
@@ -269,7 +270,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bCancelAddingProject.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bCancelAddingProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bCancelAddingProject.Location = new System.Drawing.Point(151, 449);
-            this.bCancelAddingProject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bCancelAddingProject.Margin = new System.Windows.Forms.Padding(2);
             this.bCancelAddingProject.Name = "bCancelAddingProject";
             this.bCancelAddingProject.Size = new System.Drawing.Size(152, 39);
             this.bCancelAddingProject.TabIndex = 6;
@@ -289,7 +290,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.bAddProject.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.bAddProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bAddProject.Location = new System.Drawing.Point(1, 449);
-            this.bAddProject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAddProject.Margin = new System.Windows.Forms.Padding(2);
             this.bAddProject.Name = "bAddProject";
             this.bAddProject.Size = new System.Drawing.Size(148, 39);
             this.bAddProject.TabIndex = 7;
