@@ -24,3 +24,10 @@ C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsG
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.EditIssue.resources
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\obj\Debug\ProjectsGenerator_WindowsForms_2.csprojAssemblyReference.cache
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\karol\source\repos\ProjectsGenerator_WindowsForms_2\bin\Debug\Xamarin.Forms.Xaml.xml

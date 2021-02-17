@@ -194,28 +194,28 @@ namespace ProjectsGenerator_WindowsForms_2
             // tbProjectInfoDateOutInIssueForm
             // 
             this.tbProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(988, 2);
+            this.tbProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(964, 2);
             this.tbProjectInfoDateOutInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateOutInIssueForm.Name = "tbProjectInfoDateOutInIssueForm";
             this.tbProjectInfoDateOutInIssueForm.ReadOnly = true;
-            this.tbProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(101, 31);
+            this.tbProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(125, 31);
             this.tbProjectInfoDateOutInIssueForm.TabIndex = 6;
             // 
             // tbProjectInfoDateInInIssueForm
             // 
             this.tbProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.tbProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(838, 2);
+            this.tbProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(793, 2);
             this.tbProjectInfoDateInInIssueForm.Margin = new System.Windows.Forms.Padding(2);
             this.tbProjectInfoDateInInIssueForm.Name = "tbProjectInfoDateInInIssueForm";
             this.tbProjectInfoDateInInIssueForm.ReadOnly = true;
-            this.tbProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(106, 31);
+            this.tbProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(125, 31);
             this.tbProjectInfoDateInInIssueForm.TabIndex = 5;
             // 
             // lProjectInfoDateOutInIssueForm
             // 
             this.lProjectInfoDateOutInIssueForm.AutoSize = true;
             this.lProjectInfoDateOutInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(948, 5);
+            this.lProjectInfoDateOutInIssueForm.Location = new System.Drawing.Point(922, 5);
             this.lProjectInfoDateOutInIssueForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateOutInIssueForm.Name = "lProjectInfoDateOutInIssueForm";
             this.lProjectInfoDateOutInIssueForm.Size = new System.Drawing.Size(46, 23);
@@ -226,12 +226,13 @@ namespace ProjectsGenerator_WindowsForms_2
             // 
             this.lProjectInfoDateInInIssueForm.AutoSize = true;
             this.lProjectInfoDateInInIssueForm.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(798, 5);
+            this.lProjectInfoDateInInIssueForm.Location = new System.Drawing.Point(745, 5);
             this.lProjectInfoDateInInIssueForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lProjectInfoDateInInIssueForm.Name = "lProjectInfoDateInInIssueForm";
             this.lProjectInfoDateInInIssueForm.Size = new System.Drawing.Size(46, 23);
             this.lProjectInfoDateInInIssueForm.TabIndex = 3;
             this.lProjectInfoDateInInIssueForm.Text = "Od:";
+            this.lProjectInfoDateInInIssueForm.Click += new System.EventHandler(this.lProjectInfoDateInInIssueForm_Click);
             // 
             // tbProjectInfoGeneralInIssueForm
             // 
@@ -242,7 +243,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.tbProjectInfoGeneralInIssueForm.Name = "tbProjectInfoGeneralInIssueForm";
             this.tbProjectInfoGeneralInIssueForm.ReadOnly = true;
             this.tbProjectInfoGeneralInIssueForm.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbProjectInfoGeneralInIssueForm.Size = new System.Drawing.Size(712, 54);
+            this.tbProjectInfoGeneralInIssueForm.Size = new System.Drawing.Size(659, 54);
             this.tbProjectInfoGeneralInIssueForm.TabIndex = 2;
             // 
             // lProjectInfoInIssueForm

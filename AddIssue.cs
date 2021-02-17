@@ -149,5 +149,10 @@ namespace ProjectsGenerator_WindowsForms_2
             }
             openProject.bShowMap_Click(sender, e);
         }
+
+        private void lProjectInfoDateInInIssueForm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
