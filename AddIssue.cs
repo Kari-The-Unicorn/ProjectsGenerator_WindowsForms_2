@@ -97,7 +97,10 @@ namespace ProjectsGenerator_WindowsForms_2
             {
                 if (Application.OpenForms[index].Name == "OpenMap")
                 {
-                    Application.OpenForms[index].Hide();
+                    //Application.OpenForms[index].Hide(); 
+                    Application.OpenForms[index].Refresh();
+                    Application.OpenForms[index].Show();
+                    //openProject.bShowMap_Click(sender, e);
                 }
 
                 else if (Application.OpenForms[index].Name == "AddIssue")
@@ -107,7 +110,7 @@ namespace ProjectsGenerator_WindowsForms_2
             }
             //var form2 = new OpenMap();
             //form2.OpenMap_Load(sender, e);
-            openProject.bShowMap_Click(sender, e);
+            
         }
 
         private void bCancelAddingIssue_Paint(object sender, PaintEventArgs e)

@@ -195,7 +195,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dtpProjectCollectionDate.Name = "dtpProjectCollectionDate";
             this.dtpProjectCollectionDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCollectionDate.TabIndex = 15;
-            this.dtpProjectCollectionDate.Value = new System.DateTime(2020, 11, 29, 21, 23, 3, 0);
+            this.dtpProjectCollectionDate.Value = new System.DateTime(2021, 2, 20, 0, 0, 0, 0);
             this.dtpProjectCollectionDate.ValueChanged += new System.EventHandler(this.dtpProjectCollectionDate_ValueChanged);
             // 
             // dtpProjectCompleteDate
@@ -207,6 +207,7 @@ namespace ProjectsGenerator_WindowsForms_2
             this.dtpProjectCompleteDate.Name = "dtpProjectCompleteDate";
             this.dtpProjectCompleteDate.Size = new System.Drawing.Size(206, 30);
             this.dtpProjectCompleteDate.TabIndex = 16;
+            this.dtpProjectCompleteDate.Value = new System.DateTime(2021, 2, 20, 16, 24, 40, 0);
             // 
             // bUploadImage
             // 
