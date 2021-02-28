@@ -96,6 +96,7 @@
     <Compile Include="EditIssue.Designer.cs">
       <DependentUpon>EditIssue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enums\Types.cs" />
     <Compile Include="Objects\Issue.cs" />
     <Compile Include="Objects\Picture.cs" />
     <Compile Include="Objects\Project.cs" />

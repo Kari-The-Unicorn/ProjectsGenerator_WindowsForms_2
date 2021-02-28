@@ -1,8 +1,9 @@
-﻿using ProjectsGenerator_WindowsForms_2.Objects;
-using System;
+﻿using System;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Windows.Forms;
+using ProjectsGenerator_WindowsForms_2.Enums;
+using ProjectsGenerator_WindowsForms_2.Objects;
 
 namespace ProjectsGenerator_WindowsForms_2
 {
@@ -14,6 +15,7 @@ namespace ProjectsGenerator_WindowsForms_2
         public AddIssue()
         {
             InitializeComponent();
+            cbTypes.DataSource = Enum.GetValues(typeof(Types));
         }
 
         private void bAddIssue_Click(object sender, EventArgs e)
